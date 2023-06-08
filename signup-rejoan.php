@@ -42,7 +42,7 @@
                             <img class=" w-100 " src="./images/credential barrier.png" alt="">
 
                             <!-- Sign form  -->
-                            <div class="mb-3">
+                            <div class="mb-4">
                                 <input
                                     type="text"
                                     placeholder="Full Name"

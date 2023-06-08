@@ -54,6 +54,18 @@
                                     aria-describedby="password"
                                 />
                             </div>
+                            <div class="mb-5 d-flex justify-content-between  ">
+                                <div class=" d-flex align-items-center ">
+                                    <input
+                                    type="checkbox"
+                                    placeholder="Email"
+                                    aria-describedby="email"
+                                    class="form-check-input me-2 mb-0 "
+                                    />
+                                    <p class=" mb-0 ">Remember me</p>
+                                </div>
+                                <a href="">Forgot Password</a>
+                            </div>
                             
                             <div class="form-group">
                                 <button
