@@ -21,13 +21,13 @@
     <body class="form-body">
         <div class="bg-light form-wrap">
             <div class="row w-100">
-                <!-- image  -->
+                <!-- left side highlight image  -->
                 <div class="col-sm-6">
                     <div class="form-img">
-                        <img class="w-100" src="images/sign in.jpeg" alt="" />
+                        <img class="w-100" src="./images/sign-up.jpg" alt="" />
                     </div>
                 </div>
-                <!-- Google form  -->
+                <!-- sign-up form  -->
                 <div class="col-sm-6">
                     <div
                         class="form-container d-flex justify-content-center align-items-center h-100"
@@ -37,7 +37,7 @@
                                 Hi, Get Started Now
                             </h2>
 
-                            <a class="page_btn mb-4 " href="#"> Log-In</a>
+                            <a class="page_btn mb-4 " href="./login-rejoan.php"> Log-In</a>
 
                             <img class=" w-100 " src="./images/credential barrier.png" alt="">
 
@@ -65,7 +65,7 @@
                                     class=" submit-btn"
                                     type="submit"
                                 >
-                                    Sign Up
+                                   Create Account
                                 </button>
                             </div>
                         </form>
