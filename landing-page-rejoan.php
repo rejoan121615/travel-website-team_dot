@@ -64,10 +64,10 @@
           </div>
         </nav>
         <!-- highlight text  -->
-        <div class=" position-relative" style=" z-index: 30; margin-top: 30vh;">
+        <div class=" position-relative" style=" z-index: 30; margin-top: 25vh;">
           <div class=" text-white text-center ">
-            <h1>Discover New Places and Create</h1>
-            <h1>Unforgettable Memories</h1>
+            <h1 class=" display-3 fw-bold ">Discover New Places and Create</h1>
+            <h1 class=" display-3 fw-bold">Unforgettable Memories</h1>
           </div>
         </div>
       </div>
