@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <!-- bootstrap cdn -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+  <!-- slider  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <!-- css link -->
   <link rel="stylesheet" href="./css/style.css" />
 </head>
@@ -121,18 +123,18 @@
     </div>
   </main>
   <!-- plan your best trip eveer  -->
-  <section class=" my-100 ">
+  <section class=" mt-90 ">
     <div class="container">
       <div class="row">
         <div class="col-8">
-          <h1>Plan your best Trip ever</h1>
-          <p>Making the Most of Your Travel Experience in 2023</p>
+          <h1>Plan your best trip ever</h1>
+          <p class=" mb-0 ">Making the Most of Your Travel Experience in 2023</p>
         </div>
         <div class="col-4 text-end ">
           <a href="" class=" btn-primary-outline ">view all destination</a>
         </div>
       </div>
-      <div class="row">
+      <div class="row mt-90 ">
         <div class="col-4">
           <div>
             <div class="card border border-0">
@@ -164,52 +166,110 @@
           </div>
         </div>
       </div>
-      <h1>Top Location to Explore</h1>
-      <p>Here are some of the most visited places in 2023<a href="#" class="previous round">&#8249;</a>
-        <a href="#" class="next round">&#8250;</a>
-      </p>
-      <!-- <i class="bi bi-arrow-right"></i> -->
+  </section>
+  <!-- plan your best trip eveer  -->
+  <section class=" mt-90 ">
+    <div class="container">
       <div class="row">
+        <div class="col-8">
+          <h1>Top Locations to Explore</h1>
+          <p class=" mb-0 ">Here are some of the most visited places in 2023</p>
+        </div>
+        <div class="col-4 text-end ">
+          <a href="" class=" btn-primary-outline ">view all destination</a>
+        </div>
+      </div>
+      <div class="row mt-90 ">
         <div class="col-4">
-          <div class="card border border-0">
-            <div class="card">
-              <img class="card-img-top" src="./images/image 10.png" alt="">
-              <div class="card-body">
-                <p class="card-text">Tokyo,Japan</p>
-                <h5 class="card-title">The Shibuya</h5>
+          <div>
+            <div class="card border border-0">
+              <img src="./images/Frame 17.png" class="card-img-top" alt="..." />
+              <div class="card-body px-0">
+                <p class="card-text mb-0 ">Dubai ,UEA</p>
+                <h5 class="card-title">Burj Khalifa</h5>
               </div>
             </div>
           </div>
         </div>
         <div class="col-4">
-          <div class="card border border-0">
-            <div class="card">
-              <img class="card-img-top" src="./images/image 11.png" alt="">
-              <div class="card-body">
-                <p class="card-text">Rome, Italy</p>
-                <h5 class="card-title">The Colosseum</h5>
+          <div>
+            <div class="card border border-0">
+              <img src="./images/Frame 19.png" class="card-img-top" alt="..." />
+              <div class="card-body px-0">
+                <p class="card-text mb-0 ">Rio de Janerio Brazil</p>
+                <h5 class="card-title">Meuseam of Tomorrow</h5>
               </div>
             </div>
           </div>
         </div>
         <div class="col-4">
-          <div class="card border border-0">
-            <div class="card">
-              <img class="card-img-top" src="./images/image 10.png" alt="">
-              <div class="card-body">
-                <p class="card-text">Capetown ,South Africa</p>
-                <h5 class="card-title">The Blyde River Canyon</h5>
+          <div>
+            <div class="card border border-0">
+              <img src="./images/Frame 17.png" class="card-img-top" alt="..." />
+              <div class="card-body px-0">
+                <p class="card-text mb-0 ">Rio de Janerio Brazil</p>
+                <h5 class="card-title">Meuseam of Tomorrow</h5>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
   </section>
+  <!-- your recent search section --------------  -->
+  <section class=" mt-90 ">
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <h1>Location based on search</h1>
+          <p class=" mb-0 ">Check out fun places based on your searches</p>
+        </div>
+        <div class="col-4 text-end ">
+          <a href="" class=" btn-primary-outline ">view all destination</a>
+        </div>
+      </div>
+      <div class="row mt-90 ">
+        <div class="col-4">
+          <div>
+            <div class="card border border-0">
+              <img src="./images/Frame 17.png" class="card-img-top" alt="..." />
+              <div class="card-body px-0">
+                <p class="card-text mb-0 ">Dubai ,UEA</p>
+                <h5 class="card-title">Burj Khalifa</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div>
+            <div class="card border border-0">
+              <img src="./images/Frame 19.png" class="card-img-top" alt="..." />
+              <div class="card-body px-0">
+                <p class="card-text mb-0 ">Rio de Janerio Brazil</p>
+                <h5 class="card-title">Meuseam of Tomorrow</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div>
+            <div class="card border border-0">
+              <img src="./images/Frame 17.png" class="card-img-top" alt="..." />
+              <div class="card-body px-0">
+                <p class="card-text mb-0 ">Rio de Janerio Brazil</p>
+                <h5 class="card-title">Meuseam of Tomorrow</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js">
+  </script>
+
 </body>
 
 </html>

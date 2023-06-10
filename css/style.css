@@ -114,8 +114,11 @@ input:focus {
     background-color: #4169e1;
 }
 
-.my-100 {
-    margin-top: 100px;
-    margin-bottom: 100px;
+.mt-90 {
+    margin-top: 90px;
+}
+
+.mt-150 {
+    margin-top: 150px;
 }
 
