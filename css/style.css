@@ -97,60 +97,25 @@ input:focus {
     width: 100%;
 }
 
-
-/* by sharifa  */
-.form-wrap {
-    /* width: 950px; */
+/* button  */
+.btn-primary-outline {
+    padding: 12px 25px;
+    border-radius: 100px;
+    color: #4169e1;
+    border: 1px solid #4169e1;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+    text-transform: capitalize;
+    transition: color 0.4s, background-color 0.4s;
 }
- h2{
-    margin-top: 15px;
-}
-.box .form-group .form-control[type="text"]{
-    width: 75%;
-    outline:none;
-    border-width: 0px 0px 4px 0px;
-    font-size: 12px;
-    margin-top: 15px;
-}
-.box .form-group .form-control[type="email"]{
-    width: 75%;
-    outline:none;
-    border-width: 0px 0px 4px 0px;
-    margin-top: 15px;
-    font-size: 12px;
-}
-.box .form-group .form-control[type="password"]{
-    width: 75%;
-    outline:none;
-    border-width: 0px 0px 4px 0px;
-    margin-top: 15px;
-    font-size: 12px;
-}
-.form-check{
-    margin-top: 15px;
-}
-.form-group .btn{
-    width: 75%;
-    margin-top: 15px;
-}
-a {
-  text-decoration: none;
-  display: inline-block;
-  padding: 8px 16px;
-  justify-content: end;
-  justify-items: end;
-}
-a:hover {
-  background-color: #ddd;
-  color: black;
-}
-.next {
-  background-color: #04AA6D;
-  color: white;
-}
-.round {
-  border-radius: 50%;
+.btn-primary-outline:hover {
+    color: white;
+    background-color: #4169e1;
 }
 
-
+.my-100 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 
