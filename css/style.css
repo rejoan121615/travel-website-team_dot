@@ -178,3 +178,20 @@ input:focus {
 }
 
 
+.bg-cus-primary {
+    background-color: #4169e1!important;
+}
+
+
+footer {
+    
+}
+
+footer .container {
+    padding-top: 125px;
+    padding-bottom: 125px;
+}
+
+footer img {
+    width: 140px;
+}
