@@ -218,30 +218,41 @@
   <!-- your recent search section --------------  -->
   <section class=" mt-90 ">
     <div class="container">
-      <div class="row">
-        <div class="col-8">
-          <h1>Location based on search</h1>
-          <p class=" mb-0 ">Check out fun places based on your searches</p>
-        </div>
-        <div class="col-4 text-end ">
-          <a href="" class=" btn-primary-outline ">view all destination</a>
-        </div>
-      </div>
-      <div class="row mt-90 ">
-        <div class="col-4">
-          <div>
-            <div class="card border border-0">
+      <div class=" swiper">
+          <div class="row">
+            <div class="col-8">
+              <h1>Location based on search</h1>
+              <p class=" mb-0 ">Check out fun places based on your searches</p>
+            </div>
+            <div class="col-4 d-flex align-items-center justify-content-end">
+              <!-- <a href="" class=" btn-primary-outline ">view all destination</a> -->
+              <div class=" slider-btn me-3 button-prev"><i class="fa-solid fa-arrow-left"></i></div>
+              <div class=" slider-btn button-next"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+          </div>
+          <div class="swiper-wrapper mt-90 ">
+            <div class=" swiper-slide card border border-0">
               <img src="./images/Frame 17.png" class="card-img-top" alt="..." />
               <div class="card-body px-0">
                 <p class="card-text mb-0 ">Dubai ,UEA</p>
                 <h5 class="card-title">Burj Khalifa</h5>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div>
-            <div class="card border border-0">
+            <div class=" swiper-slide card border border-0">
+              <img src="./images/Frame 19.png" class="card-img-top" alt="..." />
+              <div class="card-body px-0">
+                <p class="card-text mb-0 ">Rio de Janerio Brazil</p>
+                <h5 class="card-title">Meuseam of Tomorrow</h5>
+              </div>
+            </div>
+            <div class=" swiper-slide card border border-0">
+              <img src="./images/Frame 17.png" class="card-img-top" alt="..." />
+              <div class="card-body px-0">
+                <p class="card-text mb-0 ">Dubai ,UEA</p>
+                <h5 class="card-title">Burj Khalifa</h5>
+              </div>
+            </div>
+            <div class=" swiper-slide card border border-0">
               <img src="./images/Frame 19.png" class="card-img-top" alt="..." />
               <div class="card-body px-0">
                 <p class="card-text mb-0 ">Rio de Janerio Brazil</p>
@@ -249,19 +260,8 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-4">
-          <div>
-            <div class="card border border-0">
-              <img src="./images/Frame 17.png" class="card-img-top" alt="..." />
-              <div class="card-body px-0">
-                <p class="card-text mb-0 ">Rio de Janerio Brazil</p>
-                <h5 class="card-title">Meuseam of Tomorrow</h5>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
+    </div>
   </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
@@ -269,7 +269,7 @@
   </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js">
   </script>
-
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
