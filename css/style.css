@@ -114,6 +114,10 @@ input:focus {
     background-color: #4169e1;
 }
 
+.mt-45 {
+    margin-top: 60px;
+}
+
 .mt-90 {
     margin-top: 90px;
 }
@@ -137,5 +141,17 @@ input:focus {
 
 .slider-btn.swiper-button-disabled {
     background-color: #cdcccc;
-    
+
+}
+
+
+.card .time-date {
+    font-size: 16px;
+    color: #767676;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.card .time-date .icon {
+    font-size: 10px;
 }
