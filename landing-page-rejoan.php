@@ -167,54 +167,6 @@
         </div>
       </div>
   </section>
-  <!-- plan your best trip eveer  -->
-  <section class=" mt-90 ">
-    <div class="container">
-      <div class="row">
-        <div class="col-8">
-          <h1>Top Locations to Explore</h1>
-          <p class=" mb-0 ">Here are some of the most visited places in 2023</p>
-        </div>
-        <div class="col-4 text-end ">
-          <a href="" class=" btn-primary-outline ">view all destination</a>
-        </div>
-      </div>
-      <div class="row mt-90 ">
-        <div class="col-4">
-          <div>
-            <div class="card border border-0">
-              <img src="./images/Frame 17.png" class="card-img-top" alt="..." />
-              <div class="card-body px-0">
-                <p class="card-text mb-0 ">Dubai ,UEA</p>
-                <h5 class="card-title">Burj Khalifa</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div>
-            <div class="card border border-0">
-              <img src="./images/Frame 19.png" class="card-img-top" alt="..." />
-              <div class="card-body px-0">
-                <p class="card-text mb-0 ">Rio de Janerio Brazil</p>
-                <h5 class="card-title">Meuseam of Tomorrow</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div>
-            <div class="card border border-0">
-              <img src="./images/Frame 17.png" class="card-img-top" alt="..." />
-              <div class="card-body px-0">
-                <p class="card-text mb-0 ">Rio de Janerio Brazil</p>
-                <h5 class="card-title">Meuseam of Tomorrow</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
   <!-- your recent search section --------------  -->
   <section class=" mt-90 ">
     <div class="container">
