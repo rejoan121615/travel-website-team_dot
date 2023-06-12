@@ -381,6 +381,35 @@
           </div>
         </div>
       </div>
+      <div>
+        <!-- pagination  -->
+      <div class=" mt-45 ">
+        <ul class="pagination justify-content-center ">
+          <li class="">
+            <a class="page-link"><i class="fa-solid fa-chevron-left"></i></a>
+          </li>
+          <li class="">
+            <a class="page-link" href="#">1</a>
+          </li>
+          <li class="" >
+            <a class="page-link active" href="#">2</a>
+          </li>
+          <li class="">
+            <a class="page-link" href="#">3</a>
+          </li>
+          <li class="">
+            <a class="page-link" href="#">4</a>
+          </li>
+          <li class="">
+            <a class="page-link" href="#"><i class="fa-solid fa-ellipsis fa-2xl"></i></a>
+          </li>
+          <li class="">
+            <a class="page-link" href="#"><i class="fa-solid fa-chevron-right"></i></a>
+          </li>
+        </ul>
+    </div>
+      </div>
+    </div>
   </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
