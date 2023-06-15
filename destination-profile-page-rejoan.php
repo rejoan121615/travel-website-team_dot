@@ -183,7 +183,7 @@
       </div>
     </div>
   </section>
-    <!-- plan your best trip eveer  -->
+    <!-- post slider  -->
   <section class=" mt-90 ">
     <div class="container">
       <div class=" destination-bar row">
@@ -309,34 +309,93 @@
     </div>
     
   </section>
-  <!-- your recent search section --------------  -->
- <section class=" mt-90 ">
+    <!-- plan your best trip eveer  -->
+  <section class=" mt-90 ">
     <div class="container">
-        <!-- pagination  -->
-      <div class=" mt-45 ">
-        <ul class="pagination justify-content-center ">
-          <li class="">
-            <a class="page-link"><i class="fa-solid fa-chevron-left"></i></a>
-          </li>
-          <li class="">
-            <a class="page-link" href="#">1</a>
-          </li>
-          <li class="" >
-            <a class="page-link active" href="#">2</a>
-          </li>
-          <li class="">
-            <a class="page-link" href="#">3</a>
-          </li>
-          <li class="">
-            <a class="page-link" href="#">4</a>
-          </li>
-          <li class="">
-            <a class="page-link" href="#"><i class="fa-solid fa-ellipsis fa-2xl"></i></a>
-          </li>
-          <li class="">
-            <a class="page-link" href="#"><i class="fa-solid fa-chevron-right"></i></a>
-          </li>
-        </ul>
+      <div class=" destination-bar row">
+        <div class="col-12">
+          <p class=" text-primary text-start fw-bold ">03 / OTHER FUN PLACES IN CROATIA</p>
+        </div>
+        <div class="col-8 ">
+          <h1>Other Fun Places</h1>
+          <h1>in Croatia</h1>
+        </div>
+        <div class="col-4 d-flex align-items-center ">
+          <div class=" input-group d-flex flex-column">
+            <label for="type-of-place" class="fw-bold mb-3 ms-2 ">Filter option</label>
+            <select class="form-select w-100 " >
+              <option selected>All Popular Places</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-90 gx-5 gy-3 ">
+        <div class="col-4">
+          <div>
+            <div class="card border border-0">
+              <img src="./images/Frame 17.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Morocco</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div>
+            <div class="card border border-0">
+              <img src="./images/Frame 19.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Mexico</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div>
+            <div class="card border border-0">
+              <img src="./images/Frame 17.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Croatia</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div>
+            <div class="card border border-0">
+              <img src="./images/Frame 17.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Morocco</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div>
+            <div class="card border border-0">
+              <img src="./images/Frame 19.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Mexico</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div>
+            <div class="card border border-0">
+              <img src="./images/Frame 17.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Croatia</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" mt-5 text-center ">
+        <a href="" class=" btn-primary-outline ">View All Other Places</a>
       </div>
     </div>
   </section>
@@ -353,6 +412,7 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js">
   </script>
   <script src="./js/script.js"></script>
+
 </body>
 
 </html>
