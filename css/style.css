@@ -157,7 +157,7 @@ input:focus {
 
 .pagination .page-link {
     color: #5b5b5b !important;
-    border: 1px solid #5b5b5b!important;
+    border: 1px solid #5b5b5b !important;
     width: 50px;
     height: 50px;
     padding: 0px;
@@ -169,22 +169,17 @@ input:focus {
     border-radius: 5px;
 }
 
-
-
 .pagination .page-link.active {
     color: white !important;
     border-color: #4169e1 !important;
     background-color: #4169e1 !important;
 }
 
-
 .bg-cus-primary {
-    background-color: #4169e1!important;
+    background-color: #4169e1 !important;
 }
 
-
 footer {
-    
 }
 
 footer .container {
@@ -195,9 +190,6 @@ footer .container {
 footer img {
     width: 140px;
 }
-
-
-
 
 /* main section  */
 
@@ -222,15 +214,12 @@ main {
     position: absolute;
     left: 0;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.250);
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
 .bg-cover img {
     width: 100%;
 }
-
-
-
 
 /* search bar  */
 .search-bar {
@@ -241,14 +230,26 @@ main {
     position: relative;
 }
 
-.destination-bar {}
-.destination-bar input , .destination-bar select {
-    padding: 15px 25px!important;
-    border-radius: 200px!important;
+.destination-bar {
+}
+.destination-bar input,
+.destination-bar select {
+    padding: 15px 25px !important;
+    border-radius: 200px !important;
 }
 
 .destination-bar .btn-search {
     position: absolute;
     right: 8px;
     top: 10px;
+}
+
+/* destination profile title  */
+.dest-pro-title {
+    font-size: 250px;
+    font-style: normal;
+    font-weight: 800;
+    text-align: center;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    color: transparent;
 }

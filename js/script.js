@@ -22,4 +22,16 @@ window.onload = function () {
             prevEl: ".button-prev",
         },
     });
+
+    const all = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        slidesPerView: 2.2,
+        spaceBetween: 24,
+        // Navigation arrows
+        navigation: {
+            nextEl: ".button-next",
+            prevEl: ".button-prev",
+        },
+    });
 };
