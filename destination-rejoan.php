@@ -80,13 +80,38 @@
   <!-- plan your best trip eveer  -->
   <section class=" mt-90 ">
     <div class="container">
-      <div class="row">
-        <div class="col-8">
-          <h1>Plan your best trip ever</h1>
-          <p class=" mb-0 ">Making the Most of Your Travel Experience in 2023</p>
+      <div class=" destination-bar row">
+        <div class="col-4 d-flex align-items-end ">
+          <div class=" w-100 ">
+            <div class=" position-relative">
+              <input placeholder="Type to search a location" class=" form-control mb-0 " type="text">
+              <button class=" btn btn-search" >
+                <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="col-4 text-end ">
-          <a href="" class=" btn-primary-outline ">view all destination</a>
+        <div class="col-4 d-flex align-items-end ">
+          <div class=" input-group d-flex flex-column">
+            <label for="type-of-place" class="fw-bold mb-3 ms-2 ">Filter by type of places</label>
+            <select class="form-select w-100 " >
+              <option selected>All Types</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-4 d-flex align-items-end ">
+          <div class=" input-group d-flex flex-column">
+            <label for="type-of-place" class="fw-bold mb-3 ms-2 ">Short by</label>
+            <select class="form-select w-100 " >
+              <option selected>Most Popular</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
         </div>
       </div>
       <div class="row mt-90 ">
@@ -95,6 +120,7 @@
             <div class="card border border-0">
               <img src="./images/Frame 17.png" class="card-img-top" alt="..." />
               <div class="card-body">
+                <p class="card-text mb-0 ">Dubai ,UEA</p>
                 <h5 class="card-title">Morocco</h5>
               </div>
             </div>
@@ -105,6 +131,7 @@
             <div class="card border border-0">
               <img src="./images/Frame 19.png" class="card-img-top" alt="..." />
               <div class="card-body">
+                <p class="card-text mb-0 ">Dubai ,UEA</p>
                 <h5 class="card-title">Mexico</h5>
               </div>
             </div>
@@ -115,228 +142,18 @@
             <div class="card border border-0">
               <img src="./images/Frame 17.png" class="card-img-top" alt="..." />
               <div class="card-body">
+                <p class="card-text mb-0 ">Dubai ,UEA</p>
                 <h5 class="card-title">Croatia</h5>
               </div>
             </div>
           </div>
         </div>
       </div>
-  </section>
-  <!-- Top Locations to Explore --------------  -->
-  <section id="top-explore" class=" mt-90 ">
-    <div class="container">
-      <div class=" swiper">
-          <div class="row">
-            <div class="col-8">
-              <h1>Top Locations to Explore</h1>
-              <p class=" mb-0 ">Here are some of the most visited places in 2023</p>
-            </div>
-            <div class="col-4 d-flex align-items-center justify-content-end">
-              <!-- <a href="" class=" btn-primary-outline ">view all destination</a> -->
-              <div class=" slider-btn me-3 button-prev"><i class="fa-solid fa-arrow-left"></i></div>
-              <div class=" slider-btn button-next"><i class="fa-solid fa-arrow-right"></i></div>
-            </div>
-          </div>
-          <div class="swiper-wrapper mt-90 ">
-            <div class=" swiper-slide card border border-0">
-              <img src="./images/Frame 17.png" class="card-img-top" alt="..." />
-              <div class="card-body px-0">
-                <p class="card-text mb-0 ">Dubai ,UEA</p>
-                <h5 class="card-title">Burj Khalifa</h5>
-              </div>
-            </div>
-            <div class=" swiper-slide card border border-0">
-              <img src="./images/Frame 19.png" class="card-img-top" alt="..." />
-              <div class="card-body px-0">
-                <p class="card-text mb-0 ">Rio de Janerio Brazil</p>
-                <h5 class="card-title">Meuseam of Tomorrow</h5>
-              </div>
-            </div>
-            <div class=" swiper-slide card border border-0">
-              <img src="./images/Frame 17.png" class="card-img-top" alt="..." />
-              <div class="card-body px-0">
-                <p class="card-text mb-0 ">Dubai ,UEA</p>
-                <h5 class="card-title">Burj Khalifa</h5>
-              </div>
-            </div>
-            <div class=" swiper-slide card border border-0">
-              <img src="./images/Frame 19.png" class="card-img-top" alt="..." />
-              <div class="card-body px-0">
-                <p class="card-text mb-0 ">Rio de Janerio Brazil</p>
-                <h5 class="card-title">Meuseam of Tomorrow</h5>
-              </div>
-            </div>
-          </div>
-      </div>
-    </div>
-  </section>
-  <!-- your recent search section --------------  -->
-  <section id="recent-search" class=" mt-90 ">
-    <div class="container">
-      <div class=" swiper">
-          <div class="row">
-            <div class="col-8">
-              <h1>Location based on search</h1>
-              <p class=" mb-0 ">Check out fun places based on your searches</p>
-            </div>
-            <div class="col-4 d-flex align-items-center justify-content-end">
-              <!-- <a href="" class=" btn-primary-outline ">view all destination</a> -->
-              <div class=" slider-btn me-3 button-prev"><i class="fa-solid fa-arrow-left"></i></div>
-              <div class=" slider-btn button-next"><i class="fa-solid fa-arrow-right"></i></div>
-            </div>
-          </div>
-          <div class="swiper-wrapper mt-90 ">
-            <div class=" swiper-slide card border border-0">
-              <img src="./images/Frame 17.png" class="card-img-top" alt="..." />
-              <div class="card-body px-0">
-                <p class="card-text mb-0 ">Dubai ,UEA</p>
-                <h5 class="card-title">Burj Khalifa</h5>
-              </div>
-            </div>
-            <div class=" swiper-slide card border border-0">
-              <img src="./images/Frame 19.png" class="card-img-top" alt="..." />
-              <div class="card-body px-0">
-                <p class="card-text mb-0 ">Rio de Janerio Brazil</p>
-                <h5 class="card-title">Meuseam of Tomorrow</h5>
-              </div>
-            </div>
-            <div class=" swiper-slide card border border-0">
-              <img src="./images/Frame 17.png" class="card-img-top" alt="..." />
-              <div class="card-body px-0">
-                <p class="card-text mb-0 ">Dubai ,UEA</p>
-                <h5 class="card-title">Burj Khalifa</h5>
-              </div>
-            </div>
-            <div class=" swiper-slide card border border-0">
-              <img src="./images/Frame 19.png" class="card-img-top" alt="..." />
-              <div class="card-body px-0">
-                <p class="card-text mb-0 ">Rio de Janerio Brazil</p>
-                <h5 class="card-title">Meuseam of Tomorrow</h5>
-              </div>
-            </div>
-          </div>
-      </div>
     </div>
   </section>
   <!-- your recent search section --------------  -->
  <section class=" mt-90 ">
     <div class="container">
-      <div class="row">
-        <div class="col-8">
-          <h1>Top Travel Sories</h1>
-          <p class=" mb-0 ">Explore our latest stories from our active users</p>
-        </div>
-        <div class="col-4 text-end ">
-          <a href="" class=" btn-primary-outline ">view all destination</a>
-        </div>
-      </div>
-      <div class="row mt-45 g-5  ">
-        <div class="col-6 mt-0 ">
-          <div>
-            <div class="card bg-transparent border-0 " >
-                <img src="./images/Chattagram.jpg" class="card-img-top rounded-5 " alt="post image">
-                <div class="card-body px-0  ">
-                  <div class=" row time-date mb-3 ">
-                    <div class="col">
-                      <small>Chattogram, Bangladesh</small>                   
-                    </div>
-                    <div class=" col text-end ">
-                      <small>
-                        <span>Feb 27, 2023</span>
-                        <span class=" px-2 icon "><i class="fa-solid fa-circle"></i></span>
-                        <span>8 min read</span>  
-                      </small>
-                    </div>
-                  </div>
-                  <div>
-                    <h4 class=" mb-3 ">Chattogram the city of Port and Hill Tracts. </h4>
-                    <p class="card-text">Chattogram, also known as Chittagong, is a major city in Bangladesh. It is the second-largest city in the country and serves as the country's principal seaport and commercial hub. Chattogram is known for several things.</p>
-                    <a href="#" class="card-link text-capitalize fw-bold text-decoration-none ">Read full post	<i class=" ms-3 fa-solid fa-arrow-up-right-from-square"></i></a>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-        <div class="col-6 mt-0 ">
-          <div>
-            <div class="card bg-transparent border-0 " >
-                <img src="./images/Chattagram.jpg" class="card-img-top rounded-5 " alt="post image">
-                <div class="card-body px-0  ">
-                  <div class=" row time-date mb-3 ">
-                    <div class="col">
-                      <small>Chattogram, Bangladesh</small>                   
-                    </div>
-                    <div class=" col text-end ">
-                      <small>
-                        <span>Feb 27, 2023</span>
-                        <span class=" px-2 icon "><i class="fa-solid fa-circle"></i></span>
-                        <span>8 min read</span>  
-                      </small>
-                    </div>
-                  </div>
-                  <div>
-                    <h4 class=" mb-3 ">Chattogram the city of Port and Hill Tracts. </h4>
-                    <p class="card-text">Chattogram, also known as Chittagong, is a major city in Bangladesh. It is the second-largest city in the country and serves as the country's principal seaport and commercial hub. Chattogram is known for several things.</p>
-                    <a href="#" class="card-link text-capitalize fw-bold text-decoration-none ">Read full post	<i class=" ms-3 fa-solid fa-arrow-up-right-from-square"></i></a>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-        <div class="col-6 ">
-          <div>
-            <div class="card bg-transparent border-0 " >
-                <img src="./images/Chattagram.jpg" class="card-img-top rounded-5 " alt="post image">
-                <div class="card-body px-0  ">
-                  <div class=" row time-date mb-3 ">
-                    <div class="col">
-                      <small>Chattogram, Bangladesh</small>                   
-                    </div>
-                    <div class=" col text-end ">
-                      <small>
-                        <span>Feb 27, 2023</span>
-                        <span class=" px-2 icon "><i class="fa-solid fa-circle"></i></span>
-                        <span>8 min read</span>  
-                      </small>
-                    </div>
-                  </div>
-                  <div>
-                    <h4 class=" mb-3 ">Chattogram the city of Port and Hill Tracts. </h4>
-                    <p class="card-text">Chattogram, also known as Chittagong, is a major city in Bangladesh. It is the second-largest city in the country and serves as the country's principal seaport and commercial hub. Chattogram is known for several things.</p>
-                    <a href="#" class="card-link text-capitalize fw-bold text-decoration-none ">Read full post	<i class=" ms-3 fa-solid fa-arrow-up-right-from-square"></i></a>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-        <div class="col-6 ">
-          <div>
-            <div class="card bg-transparent border-0 " >
-                <img src="./images/Chattagram.jpg" class="card-img-top rounded-5 " alt="post image">
-                <div class="card-body px-0  ">
-                  <div class=" row time-date mb-3 ">
-                    <div class="col">
-                      <small>Chattogram, Bangladesh</small>                   
-                    </div>
-                    <div class=" col text-end ">
-                      <small>
-                        <span>Feb 27, 2023</span>
-                        <span class=" px-2 icon "><i class="fa-solid fa-circle"></i></span>
-                        <span>8 min read</span>  
-                      </small>
-                    </div>
-                  </div>
-                  <div>
-                    <h4 class=" mb-3 ">Chattogram the city of Port and Hill Tracts. </h4>
-                    <p class="card-text">Chattogram, also known as Chittagong, is a major city in Bangladesh. It is the second-largest city in the country and serves as the country's principal seaport and commercial hub. Chattogram is known for several things.</p>
-                    <a href="#" class="card-link text-capitalize fw-bold text-decoration-none ">Read full post	<i class=" ms-3 fa-solid fa-arrow-up-right-from-square"></i></a>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
-      <div>
         <!-- pagination  -->
       <div class=" mt-45 ">
         <ul class="pagination justify-content-center ">
@@ -362,7 +179,6 @@
             <a class="page-link" href="#"><i class="fa-solid fa-chevron-right"></i></a>
           </li>
         </ul>
-    </div>
       </div>
     </div>
   </section>
