@@ -230,15 +230,18 @@ main {
     position: relative;
 }
 
-.destination-bar {
+.destination-bar , .search-bar{
 }
 .destination-bar input,
-.destination-bar select {
+.destination-bar select,
+.search-bar input,
+.search-bar select  {
     padding: 15px 25px !important;
     border-radius: 200px !important;
 }
 
-.destination-bar .btn-search {
+.destination-bar .btn-search,
+.search-bar .btn-search {
     position: absolute;
     right: 8px;
     top: 10px;
