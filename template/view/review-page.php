@@ -1,3 +1,8 @@
+<?php
+require __DIR__ . '../../../vendor/autoload.php';
+use App\classes\Auth;
+use App\db\MysqliDb;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -79,5 +84,18 @@
       </div>
     </div>
 </main>
+<!-- footer  -->
+<footer class=" bg-cus-primary mt-150 ">
+    <div class=" container d-flex flex-column align-items-center justify-content-center">
+      <img src="./images/white-logo.png" alt="website white logo">
+      <p class=" mt-5 text-white ">© 2023 Travel Pulse. All rights reserved</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js">
+  </script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
