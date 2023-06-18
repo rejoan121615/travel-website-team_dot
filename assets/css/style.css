@@ -1,0 +1,258 @@
+.form-body {
+    width: 100%;
+    max-height: 100vh;
+    height: 100%;
+    overflow: hidden;
+    min-height: 500px;
+}
+
+.form-img {
+    max-height: 100vh;
+    height: 100%;
+    overflow: hidden;
+    min-height: 500px;
+    display: flex;
+    align-items: start;
+}
+
+.page_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #484848;
+    padding: 8px 20px;
+    border-radius: 100px;
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.page_btn:hover {
+    color: white;
+    background-color: #484848;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    background-color: transparent;
+    color: #484848;
+    font-size: 16px;
+    font-weight: 500;
+    border: 0;
+    border-bottom: 1px solid #8d8d8d;
+    margin-bottom: 22px;
+}
+
+input:last-child {
+    /* margin-bottom: 0; */
+}
+
+input:focus {
+    outline: none;
+}
+
+.submit-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 100px;
+    border: none;
+    color: white;
+    text-decoration: none;
+    background-color: #4169e1;
+    width: 100%;
+    height: 55px;
+}
+
+.submit-btn-nofill {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 100px;
+    color: #4169e1;
+    text-decoration: none;
+    border: 1px solid #4169e1;
+    width: 100%;
+    height: 55px;
+    background-color: transparent;
+}
+
+.verification-inputs {
+}
+
+.verification-inputs input {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.form-container {
+}
+
+.form-container form {
+    max-width: 500px;
+    width: 100%;
+}
+
+/* button  */
+.btn-primary-outline {
+    padding: 12px 25px;
+    border-radius: 100px;
+    color: #4169e1;
+    border: 1px solid #4169e1;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+    text-transform: capitalize;
+    transition: color 0.4s, background-color 0.4s;
+}
+.btn-primary-outline:hover {
+    color: white;
+    background-color: #4169e1;
+}
+
+.mt-45 {
+    margin-top: 60px;
+}
+
+.mt-90 {
+    margin-top: 90px;
+}
+
+.mt-150 {
+    margin-top: 150px;
+}
+
+.slider-btn {
+    width: 50px;
+    height: 50px;
+    padding: 0px !important;
+    border-radius: 50% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: white;
+    background-color: #4169e1;
+}
+
+.slider-btn.swiper-button-disabled {
+    background-color: #cdcccc;
+}
+
+.card .time-date {
+    font-size: 16px;
+    color: #767676;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.card .time-date .icon {
+    font-size: 10px;
+}
+
+.pagination {
+}
+
+.pagination .page-link {
+    color: #5b5b5b !important;
+    border: 1px solid #5b5b5b !important;
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.pagination .page-link.active {
+    color: white !important;
+    border-color: #4169e1 !important;
+    background-color: #4169e1 !important;
+}
+
+.bg-cus-primary {
+    background-color: #4169e1 !important;
+}
+
+footer {
+}
+
+footer .container {
+    padding-top: 125px;
+    padding-bottom: 125px;
+}
+
+footer img {
+    width: 140px;
+}
+
+/* main section  */
+
+main {
+    height: 100vh;
+    min-height: 700px;
+    position: relative;
+}
+
+.bg-cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.bg-cover::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.bg-cover img {
+    width: 100%;
+}
+
+/* search bar  */
+.search-bar {
+    position: relative;
+}
+
+.btn-search {
+    position: relative;
+}
+
+.destination-bar , .search-bar{
+}
+.destination-bar input,
+.destination-bar select,
+.search-bar input,
+.search-bar select  {
+    padding: 15px 25px !important;
+    border-radius: 200px !important;
+}
+
+.destination-bar .btn-search,
+.search-bar .btn-search {
+    position: absolute;
+    right: 8px;
+    top: 10px;
+}
+
+/* destination profile title  */
+.dest-pro-title {
+    font-size: 250px;
+    font-style: normal;
+    font-weight: 800;
+    text-align: center;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    color: transparent;
+}
