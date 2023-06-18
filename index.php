@@ -1,3 +1,9 @@
+<?php
+require __DIR__ . '/vendor/autoload.php';
+use App\classes\Auth;
+use App\db\MysqliDb;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +23,9 @@
 </head>
 
 <body>
-
+<h1>
+  <?= Auth::test(); ?>
+</h1>
 
   <!-- main section wrapper -->
   <main class=" w-100 position-relative" style=" height: 100vh;">

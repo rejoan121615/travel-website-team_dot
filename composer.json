@@ -1,0 +1,24 @@
+{
+    "name": "wdpf/travel-website-team_dot",
+    "description": "A php mysql based CMS with composer.",
+    "type": "project",
+    "require": {
+        "nesbot/carbon": "^2.67",
+        "intervention/image": "^2.7"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.23"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        },
+        "files": ["src/settings.php","src/db/MysqliDb.php"]
+    },
+    "authors": [
+        {
+            "name": "asamamun",
+            "email": "asamamun.web@gmail.com"
+        }
+    ]
+}
