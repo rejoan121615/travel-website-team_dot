@@ -16,7 +16,7 @@
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
         />
         <!-- css link -->
-        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="../../css/style.css" />
     </head>
     <body class="form-body">
         <div class="bg-light form-wrap">
@@ -24,7 +24,7 @@
                 <!-- left side highlight image  -->
                 <div class="col-sm-6">
                     <div class="form-img">
-                        <img class="w-100" src="./images/sign in.jpeg" alt="" />
+                        <img class="w-100" src="./images/sign-up.jpg" alt="" />
                     </div>
                 </div>
                 <!-- sign-up form  -->
@@ -33,31 +33,39 @@
                         class="form-container d-flex justify-content-center align-items-center h-100"
                     >
                         <form method="post">
-                          <div>
                             <h2 class="text-center display-5 fw-bold mb-5 ">
-                              Verification Code
+                                Hi, Get Started Now
                             </h2>
-                          </div>
+
+                            <a class="page_btn mb-4 " href="./login-rejoan.php"> Log-In</a>
+
+                            <img class=" w-100 " src="./images/credential barrier.png" alt="">
 
                             <!-- Sign form  -->
-                            <div class="mb-5 verification-inputs d-flex justify-content-around ">
-                                <input type="text" class=" form-control mb-0 ">
-                                <input type="text" class=" form-control mb-0 ">
-                                <input type="text" class=" form-control mb-0 ">
-                                <input type="text" class=" form-control mb-0 ">
+                            <div class="mb-4">
+                                <input
+                                    type="text"
+                                    placeholder="Full Name"
+                                    aria-describedby="name"
+                                />
+                                <input
+                                    type="email"
+                                    placeholder="Email"
+                                    aria-describedby="email"
+                                />
+                                <input
+                                    type="password"
+                                    placeholder="Password"
+                                    aria-describedby="password"
+                                />
                             </div>
+                            
                             <div class="form-group">
                                 <button
-                                    class=" submit-btn mb-3 "
+                                    class=" submit-btn"
                                     type="submit"
                                 >
-                                    Verify
-                                </button>
-                                <button
-                                    class=" submit-btn-nofill d-flex align-items-center justify-content-center "
-                                    type="submit"
-                                >
-                                Resend Code
+                                   Create Account
                                 </button>
                             </div>
                         </form>

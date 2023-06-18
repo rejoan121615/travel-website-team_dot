@@ -16,7 +16,7 @@
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
         />
         <!-- css link -->
-        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="../../css/style.css" />
     </head>
     <body class="form-body">
         <div class="bg-light form-wrap">
@@ -34,45 +34,30 @@
                     >
                         <form method="post">
                             <h2 class="text-center display-5 fw-bold mb-5 ">
-                                Hi, Get Started Now
+                                Recover Password
                             </h2>
-
-                            <a class="page_btn mb-4 " href="./signup-rejoan.php"> Create Account</a>
-
-                            <img class=" w-100 " src="./images/credential barrier.png" alt="">
 
                             <!-- Sign form  -->
                             <div class="mb-3">
                                 <input
                                     type="email"
-                                    placeholder="Email"
+                                    placeholder="Submit email to get recovery link"
                                     aria-describedby="email"
                                 />
-                                <input
-                                    type="password"
-                                    placeholder="Password"
-                                    aria-describedby="password"
-                                />
                             </div>
-                            <div class="mb-5 d-flex justify-content-between  ">
-                                <div class=" d-flex align-items-center ">
-                                    <input
-                                    type="checkbox"
-                                    placeholder="Email"
-                                    aria-describedby="email"
-                                    class="form-check-input me-2 mb-0 "
-                                    />
-                                    <p class=" mb-0 ">Remember me</p>
-                                </div>
-                                <a href="./forgot-pass-rejoan.php">Forgot Password</a>
-                            </div>
-                            
                             <div class="form-group">
                                 <button
-                                    class=" submit-btn"
+                                    class=" submit-btn mb-3 "
                                     type="submit"
                                 >
-                                    Sign In
+                                    Submit Email
+                                </button>
+                                <button
+                                    class=" submit-btn-nofill d-flex align-items-center justify-content-center "
+                                    type="submit"
+                                >
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                    <a href="./login-rejoan.php" class=" mb-0 ms-3 " style=" text-decoration: none;" >Go back to Log-in Page</a>
                                 </button>
                             </div>
                         </form>

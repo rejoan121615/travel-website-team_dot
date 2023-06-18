@@ -16,7 +16,7 @@
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
         />
         <!-- css link -->
-        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="../../css/style.css" />
     </head>
     <body class="form-body">
         <div class="bg-light form-wrap">
@@ -24,7 +24,7 @@
                 <!-- left side highlight image  -->
                 <div class="col-sm-6">
                     <div class="form-img">
-                        <img class="w-100" src="./images/sign-up.jpg" alt="" />
+                        <img class="w-100" src="./images/sign in.jpeg" alt="" />
                     </div>
                 </div>
                 <!-- sign-up form  -->
@@ -34,38 +34,27 @@
                     >
                         <form method="post">
                             <h2 class="text-center display-5 fw-bold mb-5 ">
-                                Hi, Get Started Now
+                               Reset Password
                             </h2>
-
-                            <a class="page_btn mb-4 " href="./login-rejoan.php"> Log-In</a>
-
-                            <img class=" w-100 " src="./images/credential barrier.png" alt="">
-
                             <!-- Sign form  -->
-                            <div class="mb-4">
+                            <div class="mb-3">
                                 <input
-                                    type="text"
-                                    placeholder="Full Name"
-                                    aria-describedby="name"
-                                />
-                                <input
-                                    type="email"
-                                    placeholder="Email"
-                                    aria-describedby="email"
+                                    type="password"
+                                    placeholder="New Password"
+                                    aria-describedby="password"
                                 />
                                 <input
                                     type="password"
-                                    placeholder="Password"
+                                    placeholder="Confirm New Password"
                                     aria-describedby="password"
                                 />
                             </div>
-                            
                             <div class="form-group">
                                 <button
                                     class=" submit-btn"
                                     type="submit"
                                 >
-                                   Create Account
+                                    Reset Password
                                 </button>
                             </div>
                         </form>

@@ -13,7 +13,7 @@
   <!-- slider  -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <!-- css link -->
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="../../css/style.css" />
 </head>
 
 <body>
