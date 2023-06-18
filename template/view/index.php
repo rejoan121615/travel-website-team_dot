@@ -1,5 +1,5 @@
 <?php
-require __DIR__ . '../../../vendor/autoload.php';
+require __DIR__ . '';
 use App\classes\Auth;
 use App\db\MysqliDb;
 ?>
