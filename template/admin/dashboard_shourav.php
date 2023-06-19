@@ -17,11 +17,11 @@
     <!-- css link -->
     <link rel="stylesheet" href="../../css/style.css" />
   </head>
-  <body>
+  <body class=" dashboard ">
     <section>
-      <div class="container bg-secondary rounded-4 " style=" width: 100%; height: 100vh;">
-        <div class="row h-100 ">
-          <div class="col-2 bg-success">
+      <div class="container-fluid " >
+        <div class="row g-0 h-100 ">
+          <div class="col-2 border-end pe-3 ">
             <!-- title  -->
             <div class=" display-2 mb-3 ">wise</div>
             <!-- profile  -->
@@ -55,20 +55,19 @@
             <!-- top bar  -->
             <nav>
               <div class="row">
-                <div class="col-10 d-flex">
+                <div class="col-11 d-flex">
                   <input type="text" class=" form-control mb-0 ">
                   <button class=" btn btn-outline-primary ms-3 "><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
-                <div class="col-2 d-flex justify-content-end align-content-center ">
+                <div class="col-1 d-flex justify-content-end align-content-center ">
                   <button class=" btn btn-outline-primary " style=" font-size: 20px">
                     <i class="fa-solid fa-bell"></i>
                   </button>
                 </div>
               </div>
             </nav>
-
             <!-- bottom card  -->
-            <div class="row g-5 ">
+            <div class=" row ">
               <div class="col-6">
                 <div class="  manual-card bg-primary"></div>
               </div>
