@@ -78,33 +78,17 @@
                                 <span>Users</span>
                             </a>
                         </li>
-                    </ul>
-                    <ul class="menu mt-5 ">
-                        <li class="sidebar-item  ">
-                            <a href="index.html" class='sidebar-link'>
-                                <i class="bi bi-grid-fill"></i>
-                                <span>Dashboard</span>
+                        <li class="sidebar-item">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-person-fill"></i>
+                                <span>Profile</span>
                             </a>
                         </li>
-                        <li class="sidebar-item  has-sub">
-                            <a href="#" class='sidebar-link'>
-                                <i class="bi bi-stack"></i>
-                                <span>Post</span>
+                        <li class="sidebar-item">
+                            <a href="#" class='sidebar-link '>
+                                <i class="bi bi-box-arrow-right"></i>
+                                <span>Logout</span>
                             </a>
-                            <ul class="submenu ">
-                                <li class="submenu-item ">
-                                    <a href="component-alert.html">All Post</a>
-                                </li>
-                                <li class="submenu-item ">
-                                    <a href="component-alert.html">Add New</a>
-                                </li>
-                                <li class="submenu-item ">
-                                    <a href="component-alert.html">Catagories</a>
-                                </li>
-                                <li class="submenu-item ">
-                                    <a href="component-alert.html">Tags</a>
-                                </li>
-                            </ul>
                         </li>
                     </ul>
                 </div>
