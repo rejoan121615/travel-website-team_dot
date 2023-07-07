@@ -39,7 +39,7 @@
       <div class="card">
         <div class="card-content">
           <div class="card-body">
-            <a href="new-post.php" class=" d-block btn btn-primary fw-bold">Create new post</a>
+            <a href="new-post.php" class=" d-block btn btn-outline-primary fw-bold">Create new post</a>
           </div>
         </div>
       </div>
