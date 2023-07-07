@@ -28,9 +28,29 @@
           <i class="bi bi-justify fs-3"></i>
         </a>
       </header>
+      <div class="page-heading">
+        <h3>All Post</h3>
+      </div>
       <!-- Writting Settings start -->
       <div class="row">
         <div class="col-12">
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="card-body">
+                <h4 class="card-title">Add New Post</h4>
+
+                <div class="row">
+                  <div class="col-12"> <input type="text" class="form-control is-valid" id="valid-state"
+                      placeholder="Valid" value="Valid" required>
+                    <div class="valid-feedback">
+                      <i class="bx bx-radio-circle"></i>
+                    </div>
+                    <div class=" mt-3"><input class="btn btn-primary" type="submit" value="Submit"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="card">
