@@ -32,7 +32,38 @@
       <section class="section ">
         <div class="card">
           <div class="card-body">
-
+          <table class=" table table-md w-100 border ">
+              <thead>
+                <tr>
+                  <th class=" col-1 ">
+                     <span class=" ms-2 ">users</span>
+                  </th>
+                  <th class=" col-8 ">Comments</th>
+                  <th class=" col-3 ">
+                  <button class=" btn btn-sm btn-outline-primary ">Edit</button>
+                  <button class=" btn btn-sm btn-outline-danger">Delete</button>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="col-1 "><input type="checkbox" class=" form-check-input "></td>
+                  <td class="col-8 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</td>
+                  <td class="col-3 ">
+                    <button class=" btn btn-sm btn-outline-primary ">Edit</button>
+                    <button class=" btn btn-sm btn-outline-danger">Delete</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-1 "><input type="checkbox" class=" form-check-input "></td>
+                  <td class="col-8 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</td>
+                  <td class="col-3 ">
+                    <button class=" btn btn-sm btn-outline-primary ">Edit</button>
+                    <button class=" btn btn-sm btn-outline-danger">Delete</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
