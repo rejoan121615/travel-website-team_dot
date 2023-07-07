@@ -27,7 +27,7 @@
         </a>
       </header>
       <div class="page-heading">
-        <h3>Users</h3>
+        <h3>users</h3>
       </div>
       <section class="section ">
         <div class="card">
