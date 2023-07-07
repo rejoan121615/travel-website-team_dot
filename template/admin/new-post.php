@@ -29,7 +29,7 @@
         </a>
       </header>
       <div class="page-heading">
-        <h3>All Post Table</h3>
+        <h3>Add new post</h3>
       </div>
       <section class="section ">
         <div class="card">
@@ -50,8 +50,7 @@
               </div>
               <div class=" w-100 mb-3 ">
                 <label for="post-title" class=" form-label fw-bold ">Description</label>
-                <div id="full" style=" height: 200px; ">
-                </div>
+
               </div>
               <div class=" w-100 ">
                 <label class=" form-label fw-bold " for="catagory">Select Catagory</label>

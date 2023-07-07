@@ -13,16 +13,37 @@
   <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
   <link rel="stylesheet" href="assets/css/app.css">
   <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="assets/vendors/quill/quill.bubble.css">
+  <link rel="stylesheet" href="assets/vendors/quill/quill.snow.css">
 </head>
 
 <body>
   <div id="app">
     <!-- sidebar  -->
     <?php include('./partials/SideBar.php') ?>
-    All Post Table
+    <!-- main content section  -->
+    <div id="main">
+      <header class="mb-3">
+        <a href="#" class="burger-btn d-block d-xl-none">
+          <i class="bi bi-justify fs-3"></i>
+        </a>
+      </header>
+      <div class="page-heading">
+        <h3>All Post Table</h3>
+      </div>
+      <section class="section ">
+        <div class="card">
+          <div class="card-body">
+
+          </div>
+        </div>
+      </section>
+    </div>
   </div>
   <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendors/quill/quill.min.js"></script>
+  <script src="assets/js/pages/form-editor.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 
