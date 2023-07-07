@@ -34,25 +34,25 @@
                 </div>
                 <div class="sidebar-menu">
                     <ul class="menu">
-                        <li class="sidebar-item active ">
-                            <a href="index.html" class='sidebar-link'>
+                        <li class="sidebar-item  ">
+                            <a href="#" class='sidebar-link'>
                                 <i class="bi bi-grid-fill"></i>
                                 <span>Dashboard</span>
                             </a>
                         </li>
-                        <li class="sidebar-item  has-sub">
+                        <li class="sidebar-item active has-sub">
                             <a href="#" class='sidebar-link'>
                                 <i class="bi bi-stack"></i>
                                 <span>Post</span>
                             </a>
-                            <ul class="submenu ">
+                            <ul class="submenu " style="display: block;">
                                 <li class="submenu-item ">
                                     <a href="component-alert.html">All Post</a>
                                 </li>
                                 <li class="submenu-item ">
                                     <a href="component-alert.html">Add New</a>
                                 </li>
-                                <li class="submenu-item ">
+                                <li class="submenu-item active ">
                                     <a href="component-alert.html">Catagories</a>
                                 </li>
                                 <li class="submenu-item ">
@@ -81,7 +81,7 @@
                     </ul>
                     <ul class="menu mt-5 ">
                         <li class="sidebar-item  ">
-                            <a href="index.html" class='sidebar-link'>
+                            <a href="#" class='sidebar-link'>
                                 <i class="bi bi-grid-fill"></i>
                                 <span>Dashboard</span>
                             </a>
