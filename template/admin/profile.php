@@ -36,7 +36,34 @@
       <div class="page-content">
         <div class="card">
           <div class="card-body">
+            <div class=" row">
+              <div class="col-12 mb-4 ">
+                <div class=" col-6 col-sm-4 col-md-3 col-xl-2  overflow-hidden rounded-pill ">
+                  <img class=" w-100 d-inline-block" src="assets/images/faces/1.jpg" alt="profile image">
+                </div>
+              </div>
+              <!-- name row  -->
+              <div class=" col-12 d-flex align-items-center mb-3 mb-lg-4 ">
+                <h3 class=" me-4 me-md-5 d-flex align-items-center justify-content-start ">
+                  <i class="bi bi-person-lines-fill "></i>
+                </h3>
+                <div>
+                  <p class=" mb-0 ">Full name</p>
+                  <h5 class=" mb-0 ">Mohd Rejoan</h5>
+                </div>
+              </div>
+              <!-- user name row  -->
+              <div class=" col-12 d-flex align-items-center mb-3 mb-lg-4  ">
+                <h3 class=" me-4 me-md-5 d-flex align-items-center justify-content-start ">
+                  <i class="bi bi-person-lines-fill "></i>
+                </h3>
+                <div>
+                  <p class=" mb-0 ">Full name</p>
+                  <h5 class=" mb-0 ">Mohd Rejoan</h5>
+                </div>
+              </div>
 
+            </div>
           </div>
         </div>
       </div>
