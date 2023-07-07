@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
   <link rel="stylesheet" href="assets/css/app.css">
   <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="assets/vendors/quill/quill.bubble.css">
+  <link rel="stylesheet" href="assets/vendors/quill/quill.snow.css">
 </head>
 
 <body>
@@ -32,35 +34,36 @@
       <section class="section ">
         <div class="card">
           <div class="card-body">
-            <table class=" table table-md w-100 border ">
-              <thead>
-                <tr>
-                  <th class=" col-1 ">
-                    <input type="checkbox" class=" form-check-input "> <span class=" ms-2 ">All</span>
-                  </th>
-                  <th class=" col-8 ">Article Title</th>
-                  <th class=" col-3 ">Actions</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="col-1 "><input type="checkbox" class=" form-check-input "></td>
-                  <td class="col-8 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</td>
-                  <td class="col-3 ">
-                    <button class=" btn btn-sm btn-outline-primary ">Edit</button>
-                    <button class=" btn btn-sm btn-outline-danger">Delete</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="col-1 "><input type="checkbox" class=" form-check-input "></td>
-                  <td class="col-8 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</td>
-                  <td class="col-3 ">
-                    <button class=" btn btn-sm btn-outline-primary ">Edit</button>
-                    <button class=" btn btn-sm btn-outline-danger">Delete</button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <form action="">
+              <div class=" w-100 mb-3 ">
+                <label for="post-title" class=" form-label fw-bold ">Post title</label>
+                <input type="text" class="form-control is-valid" id="post-title" placeholder="Valid" value="" required>
+                <div class="valid-feedback">
+                  <i class="bx bx-radio-circle"></i>
+                  This is valid state.
+                </div>
+              </div>
+              <div class=" w-100 mb-3 ">
+                <label for="post-title" class=" form-label fw-bold ">Description</label>
+                <div id="full" style=" height: 200px; ">
+                </div>
+              </div>
+              <div class=" w-100 mb-3 ">
+                <label for="post-title" class=" form-label fw-bold ">Description</label>
+                <div id="full" style=" height: 200px; ">
+                </div>
+              </div>
+              <div class=" w-100 ">
+                <label class=" form-label fw-bold " for="catagory">Select Catagory</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Open this select menu</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </form>
+
           </div>
         </div>
       </section>
@@ -68,8 +71,8 @@
   </div>
   <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendors/apexcharts/apexcharts.js"></script>
-  <script src="assets/js/pages/dashboard.js"></script>
+  <script src="assets/vendors/quill/quill.min.js"></script>
+  <script src="assets/js/pages/form-editor.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 
