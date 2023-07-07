@@ -40,7 +40,7 @@
                   </th>
                   <th class=" col-8 ">Comments</th>
                   <th class=" col-3 ">Actions </th>
-                  <th class=" col-3 "><i class="bi bi-justify fs-3"></i> users </th>
+                  <th class=" col-3 "> users </th>
 
                 </tr>
               </thead>
@@ -65,7 +65,7 @@
                   <td class="col-3 ">
                     <button class=" btn btn-sm btn-outline-primary ">Edit</button>
                     <button class=" btn btn-sm btn-outline-danger">Delete</button>
-                    <div class="d-flex align-items-center">
+                    <div class="d-flex mt-auto align-items-center">
                          <div class="avatar avatar-md">
                             <img src="assets/images/faces/2.jpg">
                               </div>
