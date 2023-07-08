@@ -104,7 +104,7 @@
                 </h3>
                 <div>
                   <p class=" mb-0 ">Date of Birth</p>
-                  <input class=" form-control fw-bold " id="full-name" type="text" value="Date of Birth">
+                  <input class=" form-control fw-bold " id="full-name" type="date" value="Date of Birth">
                 </div>
               </div>
               <!-- end  -->
