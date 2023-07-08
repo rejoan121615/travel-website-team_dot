@@ -1,14 +1,28 @@
 <?php
 
+    require __DIR__ . '/../../vendor/autoload.php';
+
+
+    use App\model\DbModel;
+
+    $connection = new DbModel();
+    
+
+    // $connection->doSomething();
+
+      
+
     if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password'])) {
-      echo $_POST['name'];
+      // echo $_POST['name'];
+      $userData = ['name' => $_POST['name'], 'email' => $_POST['email'], 'password' => $_POST['password']];
+      $hashPass = password_hash($userData['password'], PASSWORD_DEFAULT);
+      $connection->createUser($userData['name'],$userData['email'], $hashPass);
     }
 
 ?>
 
 <!-- html header  -->
 <?php include_once('./partials/Header.php') ?>
-
 <body class="form-body">
   <div class="bg-light form-wrap">
     <div class="row w-100">

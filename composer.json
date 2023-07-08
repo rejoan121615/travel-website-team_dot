@@ -1,0 +1,16 @@
+{
+    "name": "team_dot/travel-website-team_dot",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mohd Rejoan",
+            "email": "wearecrx@gmail.com"
+        }
+    ],
+    "require": {}
+}
