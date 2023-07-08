@@ -64,7 +64,7 @@
                 </h3>
                 <div>
                   <p class=" mb-0 ">User Name</p>
-                  <h5 class=" mb-0 ">Mohd Rejoan</h5>
+                  <input class=" form-control fw-bold " id="full-name" type="text" value="Rejoan@75">
                 </div>
               </div>
               <!-- E-mail row  -->
@@ -74,7 +74,7 @@
                 </h3>
                 <div>
                   <p class=" mb-0 ">E-mail</p>
-                  <h5 class=" mb-0 ">emaple@gmail.com</h5>
+                  <input class=" form-control fw-bold " id="full-name" type="text" value="emaple@gmail.com">
                 </div>
               </div>
               <!-- Phone Number  -->
@@ -84,7 +84,7 @@
                 </h3>
                 <div>
                   <p class=" mb-0 ">Phone Number</p>
-                  <h5 class=" mb-0 ">0111111252666</h5>
+                  <input class=" form-control fw-bold " id="full-name" type="number">
                 </div>
               </div>
               <!-- Location  -->
@@ -94,7 +94,7 @@
                 </h3>
                 <div>
                   <p class=" mb-0 ">Location</p>
-                  <h5 class=" mb-0 ">Dhaka, Bangladesh</h5>
+                  <input class=" form-control fw-bold " id="full-name" type="text" value="Enter your Location">
                 </div>
               </div>
               <!-- date of birth  -->
@@ -104,7 +104,7 @@
                 </h3>
                 <div>
                   <p class=" mb-0 ">Date of Birth</p>
-                  <h5 class=" mb-0 ">23 November 1999</h5>
+                  <input class=" form-control fw-bold " id="full-name" type="text" value="Date of Birth">
                 </div>
               </div>
               <!-- end  -->
