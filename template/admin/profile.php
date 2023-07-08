@@ -42,6 +42,11 @@
                   <img class=" w-100 d-inline-block" src="assets/images/faces/1.jpg" alt="profile image">
                 </div>
               </div>
+              <!-- buttons  -->
+            <div class=" col-12 d-flex align-items-center mb-3 mb-lg-4 ">
+            <button type="button" class="btn btn-outline-primary m-lg-3">Read</button>
+            <button type="button" class="btn btn-outline-success">Update Profile</button>
+            </div>
               <!-- name row  -->
               <div class=" col-12 d-flex align-items-center mb-3 mb-lg-4 ">
                 <h3 class=" me-4 me-md-5 d-flex align-items-center justify-content-start ">
@@ -55,14 +60,54 @@
               <!-- user name row  -->
               <div class=" col-12 d-flex align-items-center mb-3 mb-lg-4  ">
                 <h3 class=" me-4 me-md-5 d-flex align-items-center justify-content-start ">
-                  <i class="bi bi-person-lines-fill "></i>
+                <i class="bi bi-person-circle"></i>
                 </h3>
                 <div>
-                  <p class=" mb-0 ">Full name</p>
+                  <p class=" mb-0 ">User Name</p>
                   <h5 class=" mb-0 ">Mohd Rejoan</h5>
                 </div>
               </div>
-
+              <!-- E-mail row  -->
+              <div class=" col-12 d-flex align-items-center mb-3 mb-lg-4  ">
+                <h3 class=" me-4 me-md-5 d-flex align-items-center justify-content-start ">
+                <i class="bi bi-envelope"></i>
+                </h3>
+                <div>
+                  <p class=" mb-0 ">E-mail</p>
+                  <h5 class=" mb-0 ">emaple@gmail.com</h5>
+                </div>
+              </div>
+              <!-- Phone Number  -->
+              <div class=" col-12 d-flex align-items-center mb-3 mb-lg-4  ">
+                <h3 class=" me-4 me-md-5 d-flex align-items-center justify-content-start ">
+                <i class="bi bi-telephone"></i>
+                </h3>
+                <div>
+                  <p class=" mb-0 ">Phone Number</p>
+                  <h5 class=" mb-0 ">0111111252666</h5>
+                </div>
+              </div>
+              <!-- Location  -->
+              <div class=" col-12 d-flex align-items-center mb-3 mb-lg-4  ">
+                <h3 class=" me-4 me-md-5 d-flex align-items-center justify-content-start ">
+                <i class="bi bi-geo-alt-fill"></i>
+                </h3>
+                <div>
+                  <p class=" mb-0 ">Location</p>
+                  <h5 class=" mb-0 ">Dhaka, Bangladesh</h5>
+                </div>
+              </div>
+              <!-- date of birth  -->
+              <div class=" col-12 d-flex align-items-center mb-3 mb-lg-4  ">
+                <h3 class=" me-4 me-md-5 d-flex align-items-center justify-content-start ">
+                <i class="bi bi-calendar-date"></i>
+                </h3>
+                <div>
+                  <p class=" mb-0 ">Date of Birth</p>
+                  <h5 class=" mb-0 ">23 November 1999</h5>
+                </div>
+              </div>
+              <!-- end  -->
             </div>
           </div>
         </div>
