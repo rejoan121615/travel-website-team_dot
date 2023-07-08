@@ -107,6 +107,11 @@
                   <input class=" form-control fw-bold " id="full-name" type="date" value="Date of Birth">
                 </div>
               </div>
+              <!-- buttons  -->
+              <div class=" col-12 d-flex align-items-center mb-3 mb-lg-4 ">
+                <a type="button" class="btn btn-primary m-lg-3">Submit</a>
+                <a type="button" class="btn btn-danger">Cancel</a>
+              </div>
               <!-- end  -->
             </div>
           </div>
