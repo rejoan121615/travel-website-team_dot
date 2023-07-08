@@ -51,12 +51,14 @@
                   <td class="col-3 ">
                     <button class=" btn btn-sm btn-outline-primary ">Edit</button>
                     <button class=" btn btn-sm btn-outline-danger">Delete</button>
-                    <div class="d-flex align-items-center">
-                           <div class="avatar avatar-md">
-                             <img src="assets/images/faces/5.jpg">
-                                  </div>
-                                  <p class="font-bold ms-3 mb-0">Si Cantik</p>
-                            </div>
+                  </td>
+                  <td>
+                  <div class="d-flex align-items-center">
+                    <div class="avatar avatar-md">
+                      <img src="assets/images/faces/5.jpg">
+                    </div>
+                      <p class="font-bold ms-3 mb-0">Si Cantik</p>
+                    </div>
                   </td>
                 </tr>
                 <tr>
@@ -65,12 +67,14 @@
                   <td class="col-3 ">
                     <button class=" btn btn-sm btn-outline-primary ">Edit</button>
                     <button class=" btn btn-sm btn-outline-danger">Delete</button>
-                    <div class="d-flex mt-auto align-items-center">
-                         <div class="avatar avatar-md">
-                            <img src="assets/images/faces/2.jpg">
-                              </div>
-                                <p class="font-bold ms-3 mb-0">Si Ganteng</p>
-                              </div>
+                  </td>
+                  <td>
+                  <div class="d-flex mt-auto align-items-center">
+                    <div class="avatar avatar-md">
+                      <img src="assets/images/faces/2.jpg">
+                    </div>
+                      <p class="font-bold ms-3 mb-0">Si Ganteng</p>
+                    </div>
                   </td>
                 </tr>
               </tbody>
