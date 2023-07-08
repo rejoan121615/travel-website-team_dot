@@ -16,7 +16,7 @@
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
         />
         <!-- css link -->
-        <link rel="stylesheet" href="../../css/style.css" />
+        <link rel="stylesheet" href="../assets/css/style.css" />
     </head>
     <body class="form-body">
         <div class="bg-light form-wrap">
@@ -24,7 +24,7 @@
                 <!-- left side highlight image  -->
                 <div class="col-sm-6">
                     <div class="form-img">
-                        <img class="w-100" src="./images/sign in.jpeg" alt="" />
+                        <img class="w-100" src="../assets/images/sign in.jpeg" alt="" />
                     </div>
                 </div>
                 <!-- sign-up form  -->
@@ -39,7 +39,7 @@
 
                             <a class="page_btn mb-4 " href="./signup-rejoan.php"> Create Account</a>
 
-                            <img class=" w-100 " src="./images/credential barrier.png" alt="">
+                            <img class=" w-100 " src="../assets/images/credential barrier.png" alt="">
 
                             <!-- Sign form  -->
                             <div class="mb-3">

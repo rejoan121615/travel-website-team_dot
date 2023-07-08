@@ -13,7 +13,7 @@
   <!-- slider  -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <!-- css link -->
-  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 
 <body>
@@ -29,7 +29,7 @@
           <div class="container-fluid">
             <!-- website brand logo  -->
             <a class="navbar-brand d-md-none" href="#">
-              <img src="./images/logo.png" alt="website logo" style=" width: 50px;">
+              <img src="../assets/images/logo.png" alt="website logo" style=" width: 50px;">
             </a>
             <!-- responsive button  -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -40,7 +40,7 @@
             <div class="collapse navbar-collapse justify-content-md-between " id="navbarSupportedContent">
               <!-- website brand logo  -->
               <a class="navbar-brand d-none d-md-block" href="#">
-                <img src="./images/logo.png" alt="website logo" style=" width: 50px;">
+                <img src="../assets/images/logo.png" alt="website logo" style=" width: 50px;">
               </a>
               <!-- navigation menuse  -->
               <ul class="navbar-nav justify-content-md-center mb-2 mb-md-0">
@@ -80,7 +80,7 @@
       <div class=" row g-0 h-100 ">
         <!-- post column  -->
         <div class=" col-4 d-flex align-items-end justify-content-center  "
-          style="background: url('./images/post/hills.jpg') no-repeat left center; background-size: auto 100%; ">
+          style="background: url('../assets/images/post/hills.jpg') no-repeat left center; background-size: auto 100%; ">
           <div class=" row g-0 p-4 ">
             <div class=" col-10">
               <p class=" text-white mb-0 " style="font-size: 25px;">Why you should reconsider The Inca Trail, Peru
@@ -94,7 +94,7 @@
         </div>
         <!-- post column  -->
         <div class=" col-4 d-flex align-items-end justify-content-center  "
-          style="background: url('./images/post/ice.jpg') no-repeat left center; background-size: auto 100%; ">
+          style="background: url('../assets/images/post/ice.jpg') no-repeat left center; background-size: auto 100%; ">
           <div class=" row g-0 p-4 ">
             <div class=" col-10">
               <p class=" text-white mb-0 " style="font-size: 25px;">The Hidden Powers of The Northern Lights, Iceland
@@ -107,7 +107,7 @@
         </div>
         <!-- post column  -->
         <div class=" col-4 d-flex align-items-end justify-content-center  "
-          style="background: url('./images/post/sea.jpg') no-repeat left center; background-size: auto 100%; ">
+          style="background: url('../assets/images/post/sea.jpg') no-repeat left center; background-size: auto 100%; ">
           <div class=" row g-0 p-4 ">
             <div class=" col-10">
               <p class=" text-white mb-0 " style="font-size: 25px;">Why you should reconsider The Inca Trail, Peru
@@ -138,7 +138,7 @@
         <div class="col-6 mt-0 ">
           <div>
               <div class="card bg-transparent border-0 " >
-                <img src="./images/Chattagram.jpg" class="card-img-top rounded-5 " alt="post image">
+                <img src="../assets/images/Chattagram.jpg" class="card-img-top rounded-5 " alt="post image">
                 <div class="card-body px-0  ">
                   <div class=" row time-date mb-3 ">
                     <div class="col">
@@ -164,7 +164,7 @@
         <div class="col-6 mt-0 ">
           <div>
             <div class="card bg-transparent border-0 " >
-                <img src="./images/Chattagram.jpg" class="card-img-top rounded-5 " alt="post image">
+                <img src="../assets/images/Chattagram.jpg" class="card-img-top rounded-5 " alt="post image">
                 <div class="card-body px-0  ">
                   <div class=" row time-date mb-3 ">
                     <div class="col">
@@ -190,7 +190,7 @@
         <div class="col-6 ">
           <div>
             <div class="card bg-transparent border-0 " >
-                <img src="./images/Chattagram.jpg" class="card-img-top rounded-5 " alt="post image">
+                <img src="../assets/images/Chattagram.jpg" class="card-img-top rounded-5 " alt="post image">
                 <div class="card-body px-0  ">
                   <div class=" row time-date mb-3 ">
                     <div class="col">
@@ -216,7 +216,7 @@
         <div class="col-6 ">
           <div>
             <div class="card bg-transparent border-0 " >
-                <img src="./images/Chattagram.jpg" class="card-img-top rounded-5 " alt="post image">
+                <img src="../assets/images/Chattagram.jpg" class="card-img-top rounded-5 " alt="post image">
                 <div class="card-body px-0  ">
                   <div class=" row time-date mb-3 ">
                     <div class="col">
@@ -273,7 +273,7 @@
   <!-- footer  -->
   <footer class=" bg-cus-primary mt-150 ">
     <div class=" container d-flex flex-column align-items-center justify-content-center">
-      <img src="./images/white-logo.png" alt="website white logo">
+      <img src="../assets/images/white-logo.png" alt="website white logo">
       <p class=" mt-5 text-white ">© 2023 Travel Pulse. All rights reserved</p>
     </div>
   </footer>

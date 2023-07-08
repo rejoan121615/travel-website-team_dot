@@ -1,8 +1,4 @@
-<?php
-require __DIR__ . '../../../vendor/autoload.php';
-use App\classes\Auth;
-use App\db\MysqliDb;
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,12 +15,12 @@ use App\db\MysqliDb;
   <!-- slider  -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <!-- css link -->
-  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 
 <body>
 <h1>
-  <?= Auth::test(); ?>
+
 </h1>
 
   <!-- main section wrapper -->
@@ -37,7 +33,7 @@ use App\db\MysqliDb;
           <div class="container-fluid">
             <!-- website brand logo  -->
             <a class="navbar-brand d-md-none" href="#">
-              <img src="./images/logo.png" alt="website logo" style=" width: 50px;">
+              <img src="../assets/images/logo.png" alt="website logo" style=" width: 50px;">
             </a>
             <!-- responsive button  -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -48,7 +44,7 @@ use App\db\MysqliDb;
             <div class="collapse navbar-collapse justify-content-md-between " id="navbarSupportedContent">
               <!-- website brand logo  -->
               <a class="navbar-brand d-none d-md-block" href="#">
-                <img src="./images/logo.png" alt="website logo" style=" width: 50px;">
+                <img src="../assets/images/logo.png" alt="website logo" style=" width: 50px;">
               </a>
               <!-- navigation menuse  -->
               <ul class="navbar-nav justify-content-md-center mb-2 mb-md-0">
@@ -94,7 +90,7 @@ use App\db\MysqliDb;
       <div class=" row g-0 h-100 ">
         <!-- post column  -->
         <div class=" col-4 d-flex align-items-end justify-content-center  "
-          style="background: url('./images/post/hills.jpg') no-repeat left center; background-size: auto 100%; ">
+          style="background: url('../assets/images/post/hills.jpg') no-repeat left center; background-size: auto 100%; ">
           <div class=" row g-0 p-4 ">
             <div class=" col-10">
               <p class=" text-white mb-0 " style="font-size: 25px;">Why you should reconsider The Inca Trail, Peru
@@ -108,7 +104,7 @@ use App\db\MysqliDb;
         </div>
         <!-- post column  -->
         <div class=" col-4 d-flex align-items-end justify-content-center  "
-          style="background: url('./images/post/ice.jpg') no-repeat left center; background-size: auto 100%; ">
+          style="background: url('../assets/images/post/ice.jpg') no-repeat left center; background-size: auto 100%; ">
           <div class=" row g-0 p-4 ">
             <div class=" col-10">
               <p class=" text-white mb-0 " style="font-size: 25px;">The Hidden Powers of The Northern Lights, Iceland
@@ -121,7 +117,7 @@ use App\db\MysqliDb;
         </div>
         <!-- post column  -->
         <div class=" col-4 d-flex align-items-end justify-content-center  "
-          style="background: url('./images/post/sea.jpg') no-repeat left center; background-size: auto 100%; ">
+          style="background: url('../assets/images/post/sea.jpg') no-repeat left center; background-size: auto 100%; ">
           <div class=" row g-0 p-4 ">
             <div class=" col-10">
               <p class=" text-white mb-0 " style="font-size: 25px;">Why you should reconsider The Inca Trail, Peru
@@ -152,7 +148,7 @@ use App\db\MysqliDb;
         <div class="col-4">
           <div>
             <div class="card border border-0">
-              <img src="./images/Frame 17.png" class="card-img-top" alt="..." />
+              <img src="../assets/images/Frame 17.png" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Morocco</h5>
               </div>
@@ -162,7 +158,7 @@ use App\db\MysqliDb;
         <div class="col-4">
           <div>
             <div class="card border border-0">
-              <img src="./images/Frame 19.png" class="card-img-top" alt="..." />
+              <img src="../assets/images/Frame 19.png" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Mexico</h5>
               </div>
@@ -172,7 +168,7 @@ use App\db\MysqliDb;
         <div class="col-4">
           <div>
             <div class="card border border-0">
-              <img src="./images/Frame 17.png" class="card-img-top" alt="..." />
+              <img src="../assets/images/Frame 17.png" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Croatia</h5>
               </div>
@@ -198,28 +194,28 @@ use App\db\MysqliDb;
           </div>
           <div class="swiper-wrapper mt-90 ">
             <div class=" swiper-slide card border border-0">
-              <img src="./images/Frame 17.png" class="card-img-top" alt="..." />
+              <img src="../assets/images/Frame 17.png" class="card-img-top" alt="..." />
               <div class="card-body px-0">
                 <p class="card-text mb-0 ">Dubai ,UEA</p>
                 <h5 class="card-title">Burj Khalifa</h5>
               </div>
             </div>
             <div class=" swiper-slide card border border-0">
-              <img src="./images/Frame 19.png" class="card-img-top" alt="..." />
+              <img src="../assets/images/Frame 19.png" class="card-img-top" alt="..." />
               <div class="card-body px-0">
                 <p class="card-text mb-0 ">Rio de Janerio Brazil</p>
                 <h5 class="card-title">Meuseam of Tomorrow</h5>
               </div>
             </div>
             <div class=" swiper-slide card border border-0">
-              <img src="./images/Frame 17.png" class="card-img-top" alt="..." />
+              <img src="../assets/images/Frame 17.png" class="card-img-top" alt="..." />
               <div class="card-body px-0">
                 <p class="card-text mb-0 ">Dubai ,UEA</p>
                 <h5 class="card-title">Burj Khalifa</h5>
               </div>
             </div>
             <div class=" swiper-slide card border border-0">
-              <img src="./images/Frame 19.png" class="card-img-top" alt="..." />
+              <img src="../assets/images/Frame 19.png" class="card-img-top" alt="..." />
               <div class="card-body px-0">
                 <p class="card-text mb-0 ">Rio de Janerio Brazil</p>
                 <h5 class="card-title">Meuseam of Tomorrow</h5>
@@ -246,28 +242,28 @@ use App\db\MysqliDb;
           </div>
           <div class="swiper-wrapper mt-90 ">
             <div class=" swiper-slide card border border-0">
-              <img src="./images/Frame 17.png" class="card-img-top" alt="..." />
+              <img src="../assets/images/Frame 17.png" class="card-img-top" alt="..." />
               <div class="card-body px-0">
                 <p class="card-text mb-0 ">Dubai ,UEA</p>
                 <h5 class="card-title">Burj Khalifa</h5>
               </div>
             </div>
             <div class=" swiper-slide card border border-0">
-              <img src="./images/Frame 19.png" class="card-img-top" alt="..." />
+              <img src="../assets/images/Frame 19.png" class="card-img-top" alt="..." />
               <div class="card-body px-0">
                 <p class="card-text mb-0 ">Rio de Janerio Brazil</p>
                 <h5 class="card-title">Meuseam of Tomorrow</h5>
               </div>
             </div>
             <div class=" swiper-slide card border border-0">
-              <img src="./images/Frame 17.png" class="card-img-top" alt="..." />
+              <img src="../assets/images/Frame 17.png" class="card-img-top" alt="..." />
               <div class="card-body px-0">
                 <p class="card-text mb-0 ">Dubai ,UEA</p>
                 <h5 class="card-title">Burj Khalifa</h5>
               </div>
             </div>
             <div class=" swiper-slide card border border-0">
-              <img src="./images/Frame 19.png" class="card-img-top" alt="..." />
+              <img src="../assets/images/Frame 19.png" class="card-img-top" alt="..." />
               <div class="card-body px-0">
                 <p class="card-text mb-0 ">Rio de Janerio Brazil</p>
                 <h5 class="card-title">Meuseam of Tomorrow</h5>
@@ -293,7 +289,7 @@ use App\db\MysqliDb;
         <div class="col-6 mt-0 ">
           <div>
               <div class="card bg-transparent border-0 " >
-                <img src="./images/Chattagram.jpg" class="card-img-top rounded-5 " alt="post image">
+                <img src="../assets/images/Chattagram.jpg" class="card-img-top rounded-5 " alt="post image">
                 <div class="card-body px-0  ">
                   <div class=" row time-date mb-3 ">
                     <div class="col">
@@ -319,7 +315,7 @@ use App\db\MysqliDb;
         <div class="col-6 mt-0 ">
           <div>
             <div class="card bg-transparent border-0 " >
-                <img src="./images/Chattagram.jpg" class="card-img-top rounded-5 " alt="post image">
+                <img src="../assets/images/Chattagram.jpg" class="card-img-top rounded-5 " alt="post image">
                 <div class="card-body px-0  ">
                   <div class=" row time-date mb-3 ">
                     <div class="col">
@@ -345,7 +341,7 @@ use App\db\MysqliDb;
         <div class="col-6 ">
           <div>
             <div class="card bg-transparent border-0 " >
-                <img src="./images/Chattagram.jpg" class="card-img-top rounded-5 " alt="post image">
+                <img src="../assets/images/Chattagram.jpg" class="card-img-top rounded-5 " alt="post image">
                 <div class="card-body px-0  ">
                   <div class=" row time-date mb-3 ">
                     <div class="col">
@@ -371,7 +367,7 @@ use App\db\MysqliDb;
         <div class="col-6 ">
           <div>
             <div class="card bg-transparent border-0 " >
-                <img src="./images/Chattagram.jpg" class="card-img-top rounded-5 " alt="post image">
+                <img src="../assets/images/Chattagram.jpg" class="card-img-top rounded-5 " alt="post image">
                 <div class="card-body px-0  ">
                   <div class=" row time-date mb-3 ">
                     <div class="col">
@@ -428,7 +424,7 @@ use App\db\MysqliDb;
   <!-- footer  -->
   <footer class=" bg-cus-primary mt-150 ">
     <div class=" container d-flex flex-column align-items-center justify-content-center">
-      <img src="./images/white-logo.png" alt="website white logo">
+      <img src="../assets/images/white-logo.png" alt="website white logo">
       <p class=" mt-5 text-white ">© 2023 Travel Pulse. All rights reserved</p>
     </div>
   </footer>

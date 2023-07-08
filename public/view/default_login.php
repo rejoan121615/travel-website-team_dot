@@ -1,23 +1,3 @@
-<?php
-$email = isset($_POST['email']);
-$password = isset($_POST['password']);
-
-$mysqli = new mysqli('localhost', 'root', '', 'project');
-
-if ($mysqli->connect_errno) {
-}
-
-$sql = "INSERT INTO user_login (email, password) VALUES ('$email', '$password')";
-
-if ($mysqli->query($sql) === true) {
-  echo "Data inserted successfully.";
-} else {
-  echo "Error: " . $sql . "<br>" . $mysqli->error;
-}
-
-$mysqli->close();
-?>
-
 
 <!doctype html>
 <html lang="en">
@@ -27,7 +7,7 @@ $mysqli->close();
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Login Form</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
 </head>
 
@@ -36,7 +16,7 @@ $mysqli->close();
     <div class=" row ">
       <!-- image  -->
       <div class=" col-sm-6">
-        <img class=" w-100 " src="./images/Frame 26.jpg" alt="">
+        <img class=" w-100 " src="../assets/images/Frame 26.jpg" alt="">
       </div>
       <!-- my form  -->
       <div class=" col-sm-5">

@@ -16,7 +16,7 @@ use App\db\MysqliDb;
   <!-- slider  -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <!-- css link -->
-  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
     
@@ -30,7 +30,7 @@ use App\db\MysqliDb;
           <div class="container-fluid">
             <!-- website brand logo  -->
             <a class="navbar-brand d-md-none" href="#">
-              <img src="./images/logo.png" alt="website logo" style=" width: 50px;">
+              <img src="../assets/images/logo.png" alt="website logo" style=" width: 50px;">
             </a>
             <!-- responsive button  -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -41,7 +41,7 @@ use App\db\MysqliDb;
             <div class="collapse navbar-collapse justify-content-md-between " id="navbarSupportedContent">
               <!-- website brand logo  -->
               <a class="navbar-brand d-none d-md-block" href="#">
-                <img src="./images/logo.png" alt="website logo" style=" width: 50px;">
+                <img src="../assets/images/logo.png" alt="website logo" style=" width: 50px;">
               </a>
               <!-- navigation menuse  -->
               <ul class="navbar-nav justify-content-md-center mb-2 mb-md-0">
@@ -87,7 +87,7 @@ use App\db\MysqliDb;
 <!-- footer  -->
 <footer class=" bg-cus-primary mt-150 ">
     <div class=" container d-flex flex-column align-items-center justify-content-center">
-      <img src="./images/white-logo.png" alt="website white logo">
+      <img src="../assets/images/white-logo.png" alt="website white logo">
       <p class=" mt-5 text-white ">© 2023 Travel Pulse. All rights reserved</p>
     </div>
   </footer>

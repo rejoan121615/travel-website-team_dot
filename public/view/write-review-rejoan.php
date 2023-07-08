@@ -13,7 +13,7 @@
   <!-- slider  -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <!-- css link -->
-  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
   <!-- main section wrapper -->
@@ -26,7 +26,7 @@
           <div class="container-fluid">
             <!-- website brand logo  -->
             <a class="navbar-brand d-md-none" href="#">
-              <img src="./images/blue-logo.png" alt="website logo" style=" width: 50px;">
+              <img src="../assets/images/blue-logo.png" alt="website logo" style=" width: 50px;">
             </a>
             <!-- responsive button  -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -37,7 +37,7 @@
             <div class="collapse navbar-collapse justify-content-md-between " id="navbarSupportedContent">
               <!-- website brand logo  -->
               <a class="navbar-brand d-none d-md-block" href="#">
-                <img src="./images/blue-logo.png" alt="website logo" style=" width: 50px;">
+                <img src="../assets/images/blue-logo.png" alt="website logo" style=" width: 50px;">
               </a>
               <!-- navigation menuse  -->
               <ul class="navbar-nav justify-content-md-center mb-2 mb-md-0">
@@ -100,7 +100,7 @@
            <div class="card mb-3 border-0 ">
             <div class="row g-0">
               <div class="col-md-4">
-                <img class=" d-inline-block w-100 " src="./images/Frame 17.png" class="img-fluid rounded-start" alt="...">
+                <img class=" d-inline-block w-100 " src="../assets/images/Frame 17.png" class="img-fluid rounded-start" alt="...">
               </div>
               <div class="col-md-6 ms-5 ">
                 <div class="card-body">
@@ -139,7 +139,7 @@
   <!-- footer  -->
   <footer class=" bg-cus-primary mt-150 ">
     <div class=" container d-flex flex-column align-items-center justify-content-center">
-      <img src="./images/white-logo.png" alt="website white logo">
+      <img src="../assets/images/white-logo.png" alt="website white logo">
       <p class=" mt-5 text-white ">© 2023 Travel Pulse. All rights reserved</p>
     </div>
   </footer>

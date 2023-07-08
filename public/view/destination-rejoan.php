@@ -13,7 +13,7 @@
   <!-- slider  -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <!-- css link -->
-  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 
 <body>
@@ -27,7 +27,7 @@
           <div class="container-fluid">
             <!-- website brand logo  -->
             <a class="navbar-brand d-md-none" href="#">
-              <img src="./images/logo.png" alt="website logo" style=" width: 50px;">
+              <img src="../assets/images/logo.png" alt="website logo" style=" width: 50px;">
             </a>
             <!-- responsive button  -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -38,7 +38,7 @@
             <div class="collapse navbar-collapse justify-content-md-between " id="navbarSupportedContent">
               <!-- website brand logo  -->
               <a class="navbar-brand d-none d-md-block" href="#">
-                <img src="./images/logo.png" alt="website logo" style=" width: 50px;">
+                <img src="../assets/images/logo.png" alt="website logo" style=" width: 50px;">
               </a>
               <!-- navigation menuse  -->
               <ul class="navbar-nav justify-content-md-center mb-2 mb-md-0">
@@ -74,7 +74,7 @@
     </div>
     <!-- bg cover  -->
     <div class="bg-cover">
-      <img src="./images/location-bg.png" alt="location images">
+      <img src="../assets/images/location-bg.png" alt="location images">
     </div>
   </main>
   <!-- plan your best trip eveer  -->
@@ -118,7 +118,7 @@
         <div class="col-4">
           <div>
             <div class="card border border-0">
-              <img src="./images/Frame 17.png" class="card-img-top" alt="..." />
+              <img src="../assets/images/Frame 17.png" class="card-img-top" alt="..." />
               <div class="card-body">
                 <p class="card-text mb-0 ">Dubai ,UEA</p>
                 <h5 class="card-title">Morocco</h5>
@@ -129,7 +129,7 @@
         <div class="col-4">
           <div>
             <div class="card border border-0">
-              <img src="./images/Frame 19.png" class="card-img-top" alt="..." />
+              <img src="../assets/images/Frame 19.png" class="card-img-top" alt="..." />
               <div class="card-body">
                 <p class="card-text mb-0 ">Dubai ,UEA</p>
                 <h5 class="card-title">Mexico</h5>
@@ -140,7 +140,7 @@
         <div class="col-4">
           <div>
             <div class="card border border-0">
-              <img src="./images/Frame 17.png" class="card-img-top" alt="..." />
+              <img src="../assets/images/Frame 17.png" class="card-img-top" alt="..." />
               <div class="card-body">
                 <p class="card-text mb-0 ">Dubai ,UEA</p>
                 <h5 class="card-title">Croatia</h5>
@@ -185,7 +185,7 @@
   <!-- footer  -->
   <footer class=" bg-cus-primary mt-150 ">
     <div class=" container d-flex flex-column align-items-center justify-content-center">
-      <img src="./images/white-logo.png" alt="website white logo">
+      <img src="../assets/images/white-logo.png" alt="website white logo">
       <p class=" mt-5 text-white ">© 2023 Travel Pulse. All rights reserved</p>
     </div>
   </footer>
