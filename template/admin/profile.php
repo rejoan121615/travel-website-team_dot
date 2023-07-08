@@ -64,7 +64,7 @@
                 </h3>
                 <div>
                   <p class=" mb-0 ">User Name</p>
-                  <h5 class=" mb-0 ">Mohd Rejoan</h5>
+                  <h5 class=" mb-0 ">Rejoan@75</h5>
                 </div>
               </div>
               <!-- E-mail row  -->
