@@ -44,17 +44,17 @@
               </div>
               <!-- buttons  -->
               <div class=" col-12 d-flex align-items-center mb-3 mb-lg-4 ">
-                <a href="profile.php" type="button" class="btn btn-primary m-lg-3">Current Profile</a>
-                <a href="update-profile.php" type="button" class="btn btn-outline-success">Update Profile</a>
+                <a href="profile.php" type="button" class="btn btn-outline-primary m-lg-3">Current Profile</a>
+                <a href="update-profile.php" type="button" class="btn btn-success">Update Profile</a>
               </div>
               <!-- name row  -->
               <div class=" col-12 d-flex align-items-center mb-3 mb-lg-4 ">
                 <h3 class=" me-4 me-md-5 d-flex align-items-center justify-content-start ">
                   <i class="bi bi-person-lines-fill "></i>
                 </h3>
-                <div>
-                  <p class=" mb-0 ">Full name</p>
-                  <h5 class=" mb-0 ">Mohd Rejoan</h5>
+                <div class=" from-group">
+                  <label for="full-name" class=" form-label">Full Name</label>
+                  <input class=" form-control fw-bold " id="full-name" type="text" value="Mohd Rejoan">
                 </div>
               </div>
               <!-- user name row  -->

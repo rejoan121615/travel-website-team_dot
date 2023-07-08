@@ -72,7 +72,8 @@ $current_page = end($extract_current_link);
             <span>Users</span>
           </a>
         </li>
-        <li class="sidebar-item <?php if ($current_page == 'profile.php') echo 'active'; ?>">
+        <li
+          class="sidebar-item <?php if (($current_page == 'profile.php') || ($current_page == 'update-profile.php') ) echo 'active'; ?>">
           <a href="profile.php" class='sidebar-link'>
             <i class="bi bi-person-fill"></i>
             <span>Profile</span>
