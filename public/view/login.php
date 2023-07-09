@@ -16,7 +16,7 @@
 
         if (isset($queryDB['data'])) {
             $_SESSION['AUTH'] = true;
-            $_SESSION['userId'] = $userData['data']['id'];
+            $_SESSION['USER_ID'] = $queryDB['data']['id'];
             header('Location: index-some.php');
         } else {
             $errorMsg = $queryDB['msg'];

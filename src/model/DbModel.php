@@ -57,5 +57,8 @@
         return ['msg' => "User not found"];
       }
     }
+
+    // profile table 
+    // public function 
     
   }

@@ -1,9 +1,12 @@
 <?php
 
   if (session_status() == PHP_SESSION_NONE) {
-    session_start();
+    session_start(); 
+    if (isset($_SESSION['USER_ID'])) {
+      
+    }
   }
-
+  
   // if 
 
 
@@ -24,46 +27,7 @@
     <div class=" w-100 h-100 ">
       <div class="container ">
         <!-- navigation menu  -->
-        <nav class="navbar navbar-expand-md bg-body-tertiary position-relative " style=" z-index: 30;">
-          <div class="container-fluid">
-            <!-- website brand logo  -->
-            <a class="navbar-brand d-md-none" href="#">
-              <img src="../assets/images/logo.png" alt="website logo" style=" width: 50px;">
-            </a>
-            <!-- responsive button  -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-md-between " id="navbarSupportedContent">
-              <!-- website brand logo  -->
-              <a class="navbar-brand d-none d-md-block" href="#">
-                <img src="../assets/images/logo.png" alt="website logo" style=" width: 50px;">
-              </a>
-              <!-- navigation menuse  -->
-              <ul class="navbar-nav justify-content-md-center mb-2 mb-md-0">
-                <li class="nav-item">
-                  <a class="nav-link px-4 px-xl-5 text-white fw-bold" aria-current="page" href="#">Destination</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link px-4 px-xl-5 text-white fw-bold" aria-current="page" href="#">Stories</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link px-4 px-xl-5 text-white fw-bold" aria-current="page" href="#">Reviews</a>
-                </li>
-              </ul>
-              <!-- user area  -->
-              <form class="d-flex">
-                <button class=" btn text-white " type="submit">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-                <a href="" class=" fw-bold text-capitalize btn text-white rounded-pill px-4 py-2 ">Sign Up</a>
-                <a href="" class=" fw-bold text-capitalize btn bg-white text-dark rounded-pill px-4 py-2  ">Log In</a>
-              </form>
-            </div>
-          </div>
-        </nav>
+        <?php include('./partials/Navbar.php') ?>
         <!-- highlight text  -->
         <div class=" position-relative" style=" z-index: 30; margin-top: 25vh;">
           <div class=" text-white text-center ">
@@ -425,7 +389,47 @@
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js">
   </script>
-  <script src="../assets/js/script.js"></script>
-</body>
+  <script>
+    window.onload = function () {
 
+   const topExploreSwiper = new Swiper("#top-explore .swiper", {
+            // Optional parameters
+            direction: "horizontal",
+            slidesPerView: 3,
+            spaceBetween: 24,
+            // Navigation arrows
+            navigation: {
+                nextEl: ".button-next",
+                prevEl: ".button-prev",
+            },
+        });
+
+        const recentSearchSwipe = new Swiper("#recent-search .swiper", {
+            // Optional parameters
+            direction: "horizontal",
+            slidesPerView: 3,
+            spaceBetween: 24,
+            // Navigation arrows
+            navigation: {
+                nextEl: ".button-next",
+                prevEl: ".button-prev",
+            },
+        });
+
+        const all = new Swiper(".swiper", {
+            // Optional parameters
+            direction: "horizontal",
+            slidesPerView: 2.2,
+            spaceBetween: 24,
+            // Navigation arrows
+            navigation: {
+                nextEl: ".button-next",
+                prevEl: ".button-prev",
+            },
+        });
+    
+};
+
+  </script>
+</body>
 </html>
