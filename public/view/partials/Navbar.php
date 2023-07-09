@@ -1,3 +1,9 @@
+<?php
+
+
+
+?>
+
 <div id="sticky-nav" class=" px-4 ">
   <nav class="navbar navbar-expand-md bg-body-tertiary position-relative " style=" z-index: 30;">
   <div class="container-fluid">
@@ -30,11 +36,12 @@
       </ul>
       <!-- user area  -->
       <form class="d-flex">
-        <button class=" btn text-white " type="submit">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-        <a href="signup.php" class=" fw-bold text-capitalize btn text-white rounded-pill px-4 py-2 ">Sign Up</a>
-        <a href="login.php" class=" fw-bold text-capitalize btn bg-white text-dark rounded-pill px-4 py-2  ">Log In</a>
+        <?php if (isset($_SESSION['AUTH'])){ ?>
+          <?= "<a href='../admin/dashboard.php' class=' btn btn-primary ' >Dashboard</a>" ?>
+        <?php } else { ?>
+          <a href="signup.php" class=" fw-bold text-capitalize btn text-white rounded-pill px-4 py-2 ">Sign Up</a>
+          <a href="login.php" class=" fw-bold text-capitalize btn bg-white text-dark rounded-pill px-4 py-2  ">Log In</a>
+        <?php } ?>
       </form>
     </div>
   </div>

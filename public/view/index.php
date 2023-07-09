@@ -9,7 +9,9 @@
     if (isset($_SESSION['AUTH'])) {
       // get profile data 
       $profile = new ProfileModel($_SESSION['USER_ID']);
-      $profileData = [...$profile->profileData()];
+      $profileData = $profile->profileData();
+      // set profile data into session 
+      $_SESSION['USER_DATA'] = $profileData;
     }
   }
   
@@ -56,7 +58,8 @@
 
     <!-- post lists --------------------  -->
     <div class=" position-absolute w-100 h-100 " style=" left: 0; top: 0; z-index: 10;">
-      <div class=" row g-0 h-100 ">
+    <!-- for large screen  -->
+      <div class=" row g-0 h-100 d-none d-md-flex ">
         <!-- post column  -->
         <div class=" col-4 d-flex align-items-end justify-content-center  "
           style="background: url('../assets/images/post/hills.jpg') no-repeat left center; background-size: auto 100%; ">
@@ -99,6 +102,10 @@
           </div>
         </div>
       </div>
+      <!-- for small screen  -->
+      <div class=" h-100 d-block d-md-none "
+          style="background: url('../assets/images/post/hills.jpg') no-repeat left center; background-size: auto 100%; ">
+    </div>
     </div>
   </main>
   <!-- plan your best trip eveer  -->

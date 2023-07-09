@@ -29,4 +29,8 @@
       return $this->userData;
     }
 
+    static function updateProfile (...$data) {
+      print_r($data);
+    }
+
   }

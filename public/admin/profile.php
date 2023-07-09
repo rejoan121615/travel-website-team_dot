@@ -1,10 +1,27 @@
+<?php 
+
+
+
+  if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+    $data = $_SESSION['USER_DATA'];
+    print_r($data['phone']);
+  } else {
+    header('Location: "../view/login.php"');
+  }
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard - Mazer Admin Dashboard</title>
+  <title>Profile</title>
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -49,62 +66,52 @@
               </div>
               <!-- name row  -->
               <div class=" col-12 d-flex align-items-center mb-3 mb-lg-4 ">
-                <h3 class=" me-4 me-md-5 d-flex align-items-center justify-content-start ">
+                <h5 class=" me-4 me-md-5 d-flex align-items-center justify-content-start ">
                   <i class="bi bi-person-lines-fill "></i>
-                </h3>
+                </h5>
                 <div>
                   <p class=" mb-0 ">Full name</p>
-                  <h5 class=" mb-0 ">Mohd Rejoan</h5>
-                </div>
-              </div>
-              <!-- user name row  -->
-              <div class=" col-12 d-flex align-items-center mb-3 mb-lg-4  ">
-                <h3 class=" me-4 me-md-5 d-flex align-items-center justify-content-start ">
-                  <i class="bi bi-person-circle"></i>
-                </h3>
-                <div>
-                  <p class=" mb-0 ">User Name</p>
-                  <h5 class=" mb-0 ">Rejoan@75</h5>
+                  <h6 class=" mb-0 "><?= isset($data['name']) ? $data['name'] : 'Not available' ?></h6>
                 </div>
               </div>
               <!-- E-mail row  -->
               <div class=" col-12 d-flex align-items-center mb-3 mb-lg-4  ">
-                <h3 class=" me-4 me-md-5 d-flex align-items-center justify-content-start ">
+                <h5 class=" me-4 me-md-5 d-flex align-items-center justify-content-start ">
                   <i class="bi bi-envelope"></i>
-                </h3>
+                </h5>
                 <div>
                   <p class=" mb-0 ">E-mail</p>
-                  <h5 class=" mb-0 ">emaple@gmail.com</h5>
+                  <h6 class=" mb-0 "><?= isset($data['email']) ? $data['email'] : 'Not available' ?></h6>
                 </div>
               </div>
               <!-- Phone Number  -->
               <div class=" col-12 d-flex align-items-center mb-3 mb-lg-4  ">
-                <h3 class=" me-4 me-md-5 d-flex align-items-center justify-content-start ">
+                <h5 class=" me-4 me-md-5 d-flex align-items-center justify-content-start ">
                   <i class="bi bi-telephone"></i>
-                </h3>
+                </h5>
                 <div>
                   <p class=" mb-0 ">Phone Number</p>
-                  <h5 class=" mb-0 ">0111111252666</h5>
+                  <h6 class=" mb-0 "><?= isset($data['phone']) ? $data['phone'] : 'Not available' ?></h6>
+                </div>
+              </div>
+              <!-- gender  -->
+              <div class=" col-12 d-flex align-items-center mb-3 mb-lg-4  ">
+                <h5 class=" me-4 me-md-5 d-flex align-items-center justify-content-start ">
+                  <i class="bi bi-person-badge-fill"></i>
+                </h5>
+                <div>
+                  <p class=" mb-0 ">Gender</p>
+                  <h6 class=" mb-0 "><?= isset($data['location']) ? $data['location'] : 'Not available' ?></h6>
                 </div>
               </div>
               <!-- Location  -->
               <div class=" col-12 d-flex align-items-center mb-3 mb-lg-4  ">
-                <h3 class=" me-4 me-md-5 d-flex align-items-center justify-content-start ">
+                <h5 class=" me-4 me-md-5 d-flex align-items-center justify-content-start ">
                   <i class="bi bi-geo-alt-fill"></i>
-                </h3>
+                </h5>
                 <div>
-                  <p class=" mb-0 ">Location</p>
-                  <h5 class=" mb-0 ">Dhaka, Bangladesh</h5>
-                </div>
-              </div>
-              <!-- date of birth  -->
-              <div class=" col-12 d-flex align-items-center mb-3 mb-lg-4  ">
-                <h3 class=" me-4 me-md-5 d-flex align-items-center justify-content-start ">
-                  <i class="bi bi-calendar-date"></i>
-                </h3>
-                <div>
-                  <p class=" mb-0 ">Date of Birth</p>
-                  <h5 class=" mb-0 ">23 November 1999</h5>
+                  <p class=" mb-0 ">Address</p>
+                  <h6 class=" mb-0 "><?= isset($data['location']) ? $data['location'] : 'Not available' ?></h6>
                 </div>
               </div>
               <!-- end  -->

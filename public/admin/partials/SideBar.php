@@ -8,8 +8,8 @@ $current_page = end($extract_current_link);
   <div class="sidebar-wrapper active">
     <div class="sidebar-header">
       <div class="d-flex justify-content-between">
-        <div class="logo">
-          <a href="index.html"><img src="assets/images/logo/logo.png" alt="Logo" srcset=""></a>
+        <div class="logo w-100 ">
+          <a href="../view/index.php" class=" btn btn-success fw-bold d-block ">Go To Website</a>
         </div>
         <div class="toggler">
           <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
@@ -80,7 +80,7 @@ $current_page = end($extract_current_link);
           </a>
         </li>
         <li class="sidebar-item">
-          <a href="#" class='sidebar-link '>
+          <a href="logout.php" class='sidebar-link '>
             <i class="bi bi-box-arrow-right"></i>
             <span>Logout</span>
           </a>
