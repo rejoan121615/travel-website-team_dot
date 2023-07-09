@@ -17,7 +17,7 @@
         if (isset($queryDB['data'])) {
             $_SESSION['AUTH'] = true;
             $_SESSION['USER_ID'] = $queryDB['data']['id'];
-            header('Location: index-some.php');
+            header('Location: index.php');
         } else {
             $errorMsg = $queryDB['msg'];
         }
@@ -36,6 +36,14 @@
 
     <body class="form-body">
         <div class="bg-light form-wrap">
+
+            <!-- go back button  -->
+                <!-- <a href="index.php" class="form-cross-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </a> -->
+                <a href="index.php" class="form-cross-btn btn btn-outline-danger rounded-pill ">
+                  <i class="fa-solid fa-arrow-left"></i> &nbsp; Previous Page
+                </a>
             <div class="row w-100">
                 <!-- left side highlight image  -->
                 <div class="col-sm-6">

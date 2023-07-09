@@ -22,6 +22,11 @@
         }
     }
 
+    // return connection and value 
+    public function getConnection() {
+      return $this->connection;
+    }
+
     // register user 
     public function createUser ($name, $email, $password) {
       // check if the user available 

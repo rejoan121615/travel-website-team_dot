@@ -1,9 +1,15 @@
 <?php
 
+  require __DIR__ . '../../../vendor/autoload.php';
+
+  use App\model\ProfileModel;
+
   if (session_status() == PHP_SESSION_NONE) {
     session_start(); 
-    if (isset($_SESSION['USER_ID'])) {
-      
+    if (isset($_SESSION['AUTH'])) {
+      // get profile data 
+      $profile = new ProfileModel($_SESSION['USER_ID']);
+      $profileData = [...$profile->profileData()];
     }
   }
   
@@ -12,34 +18,38 @@
 
 ?>
 
-
-<!-- header from partials  -->
-<?php include('./partials/Header.php') ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sign-up page</title>
+  <!-- font-awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- bootstrap cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+  <!-- slider  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <!-- css link -->
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
 
 <body>
-<h1>
 
-</h1>
-
+  <!-- navigation menu  -->
+  <?php include_once('partials/Navbar.php') ?> 
   <!-- main section wrapper -->
   <main class=" w-100 position-relative" style=" height: 100vh;">
     <!-- navbar ---------------------  -->
     <div class=" w-100 h-100 ">
       <div class="container ">
-        <!-- navigation menu  -->
-        <?php include('./partials/Navbar.php') ?>
         <!-- highlight text  -->
-        <div class=" position-relative" style=" z-index: 30; margin-top: 25vh;">
+        <div class=" position-relative" style=" z-index: 30; padding-top: 35vh;">
           <div class=" text-white text-center ">
             <h1 class=" display-3 fw-bold ">Discover New Places and Create</h1>
             <h1 class=" display-3 fw-bold">Unforgettable Memories</h1>
           </div>
-          <div class=" position-relative">
-              <input placeholder="Type to search a location" class=" form-control mb-0 " type="text">
-              <button class=" btn btn-search" >
-                <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-              </button>
-            </div>
         </div>
       </div>
     </div>
@@ -247,7 +257,7 @@
       <div class="row mt-45 g-5  ">
         <div class="col-6 mt-0 ">
           <div>
-              <div class="card bg-transparent border-0 " >
+            <div class="card bg-transparent border-0 " >
                 <img src="../assets/images/Chattagram.jpg" class="card-img-top rounded-5 " alt="post image">
                 <div class="card-body px-0  ">
                   <div class=" row time-date mb-3 ">
@@ -387,49 +397,39 @@
       <p class=" mt-5 text-white ">© 2023 Travel Pulse. All rights reserved</p>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js">
   </script>
   <script>
     window.onload = function () {
-
-   const topExploreSwiper = new Swiper("#top-explore .swiper", {
-            // Optional parameters
-            direction: "horizontal",
-            slidesPerView: 3,
-            spaceBetween: 24,
-            // Navigation arrows
-            navigation: {
-                nextEl: ".button-next",
-                prevEl: ".button-prev",
-            },
-        });
-
-        const recentSearchSwipe = new Swiper("#recent-search .swiper", {
-            // Optional parameters
-            direction: "horizontal",
-            slidesPerView: 3,
-            spaceBetween: 24,
-            // Navigation arrows
-            navigation: {
-                nextEl: ".button-next",
-                prevEl: ".button-prev",
-            },
-        });
-
-        const all = new Swiper(".swiper", {
-            // Optional parameters
-            direction: "horizontal",
-            slidesPerView: 2.2,
-            spaceBetween: 24,
-            // Navigation arrows
-            navigation: {
-                nextEl: ".button-next",
-                prevEl: ".button-prev",
-            },
-        });
-    
+    const topExploreSwiper = new Swiper("#top-explore .swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        slidesPerView: 3,
+        spaceBetween: 24,
+        // Navigation arrows
+        navigation: {
+            nextEl: ".button-next",
+            prevEl: ".button-prev",
+        },
+    });
+  
+    const recentSearchSwipe = new Swiper("#recent-search .swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        slidesPerView: 3,
+        spaceBetween: 24,
+        // Navigation arrows
+        navigation: {
+            nextEl: ".button-next",
+            prevEl: ".button-prev",
+        },
+    });
 };
 
   </script>
 </body>
+
 </html>

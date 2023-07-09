@@ -23,6 +23,10 @@
 <?php include_once('./partials/Header.php') ?>
 <body class="form-body">
   <div class="bg-light form-wrap">
+    <!-- go back button  -->
+    <a href="index.php" class="form-cross-btn btn btn-outline-danger rounded-pill ">
+      <i class="fa-solid fa-arrow-left"></i> &nbsp; Previous Page
+    </a>
     <div class="row w-100">
       <!-- left side highlight image  -->
       <div class="col-sm-6">
