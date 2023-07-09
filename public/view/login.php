@@ -1,8 +1,11 @@
 <?php
+    
+    if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
 
     require_once __DIR__ . '../../../vendor/autoload.php';
     use App\model\DbModel;
-    session_start();
 
     if (isset($_POST['email']) && isset($_POST['password'])) {
 
@@ -11,8 +14,12 @@
         // verify user 
         $queryDB = $connection->verifyUser($_POST['email'],  $_POST['password']);
 
-        if ($queryDB['auth']) {
-            session
+        if (isset($queryDB['data'])) {
+            $_SESSION['AUTH'] = true;
+            $_SESSION['userId'] = $userData['data']['id'];
+            header('Location: index-some.php');
+        } else {
+            $errorMsg = $queryDB['msg'];
         }
         
     }
@@ -49,7 +56,11 @@
                             <a class="page_btn mb-4 " href="signup.php"> Create Account</a>
 
                             <img class=" w-100 " src="../assets/images/credential barrier.png" alt="">
-
+                            
+                            <!-- alert box  -->
+                            <?php if (isset($errorMsg)): ?>
+                                <p class=" text-center text-danger mb-0 "> <?= htmlspecialchars($errorMsg); ?></p>
+                            <?php endif; ?>
                             <!-- Sign form  -->
                             <div class="">
                                 <div class="input-group mb-3">
@@ -59,6 +70,7 @@
                                         aria-describedby="email"
                                         class=" form-control"
                                         name="email"
+                                        value=" <?= isset($_POST['email']) ? $_POST['email'] : null ?> "
                                         required
                                     />
                                     <div class="valid-feedback">Looks good!</div>

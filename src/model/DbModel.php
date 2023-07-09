@@ -47,7 +47,7 @@
         //  verify pass 
         if (password_verify($password, $data['password'])) {
           $this->connection->close();
-          return ['msg' => 'verifyed successfully', 'auth' => true];
+          return ['msg' => 'verifyed successfully', 'data' => $data];
         } else {
           $this->connection->close();
           return ['msg' => 'Wrong password'];
