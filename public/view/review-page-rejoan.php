@@ -1,20 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+ <!-- html header  -->
+ <?php include('./partials/Header.php') ?>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>sign-up page</title>
-  <!-- font-awesome cdn -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <!-- bootstrap cdn -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
-  <!-- slider  -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <!-- css link -->
-  <link rel="stylesheet" href="../assets/css/style.css" />
-</head>
+<!-- body  -->
 <body>
   <!-- main section wrapper -->
   <main class=" w-100 position-relative" style=" height: 100vh;">
