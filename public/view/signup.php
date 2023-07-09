@@ -1,22 +1,20 @@
 <?php
 
     require __DIR__ . '/../../vendor/autoload.php';
-
-
     use App\model\DbModel;
-
-    $connection = new DbModel();
     
-
-    // $connection->doSomething();
-
-      
-
+    
     if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password'])) {
+      $connection = new DbModel();
       // echo $_POST['name'];
       $userData = ['name' => $_POST['name'], 'email' => $_POST['email'], 'password' => $_POST['password']];
       $hashPass = password_hash($userData['password'], PASSWORD_DEFAULT);
-      $connection->createUser($userData['name'],$userData['email'], $hashPass);
+      // query on database 
+      $dbFeedBack = $connection->createUser($userData['name'],$userData['email'], $hashPass);
+      
+      if ($dbFeedBack['created']) {
+        header("Location: login.php");
+      }
     }
 
 ?>
@@ -40,7 +38,7 @@
               Hi, Get Started Now
             </h2>
 
-            <a class="page_btn mb-4" href="./login-rejoan.php">Log-In</a>
+            <a class="page_btn mb-4" href="login.php">Log-In</a>
 
             <img class="w-100" src="../assets/images/credential barrier.png" alt="">
 

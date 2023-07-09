@@ -22,10 +22,40 @@
         }
     }
 
+    // register user 
     public function createUser ($name, $email, $password) {
-      // $this->connection->query('INSERT INTO users (`name`, `email`, `password`) VALUES (`Mohd Rejoan`, `wearecrx@gmail.com`, `12345`);');
-      $this->connection->query("INSERT INTO users (`name`, `email`, `password`) VALUES ('$name', '$email', '$password');");
-      $this->connection->close();
+      // check if the user available 
+      $queryData = $this->connection->query("SELECT * FROM users WHERE email = '$email'");
+      // if not available then push new user 
+      if ($queryData->num_rows) {
+        $this->connection->close();
+        return ['msg' => 'Another user is already there with email', 'created' => false];
+      } else {
+        $queryData = $this->connection->query("INSERT INTO users (`name`, `email`, `password`) VALUES ('$name', '$email', '$password');");
+        $this->connection->close();
+        return ['msg' => 'Register successfully', "created" => true];
+      }
+    }
+
+    // login user method 
+    public function verifyUser ($email, $password) {
+      $queryData = $this->connection->query("SELECT * FROM users WHERE email = '$email'");
+
+      if ($queryData->num_rows > 0) {
+        // data 
+         $data =  $queryData->fetch_assoc();
+        //  verify pass 
+        if (password_verify($password, $data['password'])) {
+          $this->connection->close();
+          return ['msg' => 'verifyed successfully', 'auth' => true];
+        } else {
+          $this->connection->close();
+          return ['msg' => 'Wrong password'];
+        }
+      } else {
+        $this->connection->close();
+        return ['msg' => "User not found"];
+      }
     }
     
   }

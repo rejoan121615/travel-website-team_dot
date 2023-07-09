@@ -32,7 +32,7 @@
     background-color: #484848;
 }
 
-input {
+input.form-control {
     padding: 10px!important;
     width: 100%!important;
     background-color: transparent!important;
