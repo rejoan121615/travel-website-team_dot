@@ -1,8 +1,13 @@
 <?php
 
+    if (session_status() == PHP_SESSION_NONE) {
+      session_start();
+    }
+
   require __DIR__ . '../../../vendor/autoload.php';
   use App\model\CategoryModel;
 
+  $categoryModel = new CategoryModel();
   // echo $_GET['c-name'];
 
 if (isset($_GET['c-name'])) {
@@ -12,23 +17,32 @@ if (isset($_GET['c-name'])) {
     // $categoryModel = new CategoryModel();
     // $categoryModel->createCategory("New Category", "This is a new category description");
     // Check if the category already exists
-    $categoryModel = new CategoryModel();
     $existingCategory = $categoryModel->getCategoryByName($title);
     if ($existingCategory) {
-     $msg = "<p class=' text-danger text-center'>Category already exists.</p>";
-    //  header('location:categories.php');
+     $_SESSION['C-ALERT'] = "<p class=' text-danger text-center'>Category already exists.</p>";
+     header('location:categories.php');
     } else {
       // Create the new category
       $categoryModel->createCategory($title, $description);
-      $msg = "<p class=' text-success text-center'>
+      $_SESSION['C-ALERT'] = "<p class=' text-success text-center'>
   Category created successfully.
 </p>";
-      // header('location:categories.php');
+      header('location:categories.php');
     }
   }
 
 
 
+if (isset($_POST['delete_category'])) {
+  $categoryID = $_POST['category_id'];
+
+  // Delete the category by ID
+  $categoryModel->deleteCategory($categoryID);
+
+  // Redirect to the categories page
+  header('Location: categories.php');
+  exit();
+}
 
 
 ?>
@@ -76,78 +90,90 @@ if (isset($_GET['c-name'])) {
             <div class="card-content">
               <div class="card-body">
                 <h4 class="card-title">Add New Categories</h4>
-                  <form action="" method="get" class="needs-validation" novalidate>
-                    <div class="row">
-                      <?= isset($msg) ? $msg : null ?>
-                      <div class="col-12">
-                        <div class="form-group">
-                          <label for="c-name" class=" mb-2 ">Category Name</label>
-                          <input type="text" name="c-name" class="form-control" id="c-name" placeholder="Enter name" required>
-                          <div class="valid-feedback">
-                            Category Name is valid.
-                          </div>
-                          <div class="invalid-feedback">
-                            Please enter a Category Name.
-                          </div>
-                          <div id="category-suggestions"></div> <!-- Container to display category name suggestions -->
+                <form action="" method="get" class="needs-validation" novalidate>
+                  <div class="row">
+                    <?= isset($msg) ? $msg : null ?>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label for="c-name" class=" mb-2 ">Category Name</label>
+                        <input type="text" name="c-name" class="form-control" id="c-name" placeholder="Enter name"
+                          required>
+                        <div class="valid-feedback">
+                          Category Name is valid.
                         </div>
+                        <div class="invalid-feedback">
+                          Please enter a Category Name.
+                        </div>
+                        <div id="category-suggestions"></div> <!-- Container to display category name suggestions -->
                       </div>
-                      <div class="col-12">
-                        <div class="form-group">
-                          <label for="c-description" class=" mb-2 ">Categories Description</label>
-                          <input type="text" name="c-description" class="form-control" id="c-description" placeholder="Enter categories description" required>
-                          <div class="valid-feedback">
-                            Categories Description is valid.
-                          </div>
-                          <div class="invalid-feedback">
-                            Please enter Categories Description.
-                          </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label for="c-description" class=" mb-2 ">Categories Description</label>
+                        <input type="text" name="c-description" class="form-control" id="c-description"
+                          placeholder="Enter categories description" required>
+                        <div class="valid-feedback">
+                          Categories Description is valid.
+                        </div>
+                        <div class="invalid-feedback">
+                          Please enter Categories Description.
                         </div>
                       </div>
                     </div>
-                    <div class="mt-3">
-                      <input class="btn btn-primary" type="submit" value="Submit">
-                    </div>
-                  </form>
+                  </div>
+                  <div class="mt-3">
+                    <input class="btn btn-primary" type="submit" value="Submit">
+                  </div>
+                </form>
               </div>
             </div>
           </div>
           <div class="card">
             <div class="card-body">
-              <table class=" table table-md w-100 border ">
+              <table class="table table-md w-100 border">
                 <thead>
                   <tr>
-                    <th class=" col-1 ">
-                      <input type="checkbox" class=" form-check-input "> <span class=" ms-2 ">All</span>
+                    <th class="col-1">
+                      <input type="checkbox" class="form-check-input"> <span class="ms-2">All</span>
                     </th>
-                    <th class=" col-8 ">Comments</th>
-                    <th class=" col-3 ">Actions</th>
+                    <th class="col-8">Category Name</th>
+                    <th class="col-3">Actions</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td class="col-1 "><input type="checkbox" class=" form-check-input "></td>
-                    <td class="col-8 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</td>
-                    <td class="col-3 ">
-                      <button class=" btn btn-sm btn-outline-primary ">Edit</button>
-                      <button class=" btn btn-sm btn-outline-danger">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="col-1 "><input type="checkbox" class=" form-check-input "></td>
-                    <td class="col-8 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</td>
-                    <td class="col-3 ">
-                      <button class=" btn btn-sm btn-outline-primary ">Edit</button>
-                      <button class=" btn btn-sm btn-outline-danger">Delete</button>
-                    </td>
-                  </tr>
+                  <?php
+                $categoryModel = new CategoryModel();
+                $categories = $categoryModel->getAllCategories();
+
+                if (count($categories)) {
+                  foreach ($categories as $category) {
+                  echo '<tr>';
+                  echo '<td class="col-1"><input type="checkbox" class="form-check-input"></td>';
+                  echo '<td class="col-8">' . $category['name'] . '</td>';
+                  echo '<td class="col-3">
+                          <form action="" method="post" style="display:inline;">
+                            <input type="hidden" name="category_id" value="' . $category['id'] . '">
+                            <button type="submit" name="delete_category" class="btn btn-sm btn-outline-danger">Delete</button>
+                          </form>
+                        </td>';
+                  echo '</tr>';
+                }
+                } 
+
+              
+                ?>
                 </tbody>
               </table>
+
+              <?php
+                if (!count($categories)) {
+                  echo '<p class=" fw-bold text-center mt-2 " > No categories available</p>';
+                }
+                ?>
             </div>
           </div>
         </div>
       </div>
-
     </div>
     <!-- Writting Settings End -->
   </div>
@@ -168,7 +194,7 @@ if (isset($_GET['c-name'])) {
       form.classList.add('was-validated');
     }, false);
   });
-</script>
+  </script>
   <script src="assets/js/main.js"></script>
 </body>
 

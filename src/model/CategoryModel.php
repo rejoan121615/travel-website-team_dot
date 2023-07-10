@@ -18,18 +18,19 @@
     
 
     // get all category 
- public function getAllCategoryNames() {
-    $query = $this->DB->query("SELECT name FROM `travel-blog`.categories;");
-    $categoryNames = [];
+public function getAllCategories()
+    {
+        $query = $this->DB->query("SELECT * FROM `travel-blog`.categories;");
+        $categoryData = [];
 
-    if ($query->num_rows > 0) {
-        while ($row = $query->fetch_assoc()) {
-            $categoryNames[] = $row['name'];
+        if ($query->num_rows > 0) {
+            while ($row = $query->fetch_assoc()) {
+                $categoryData[] = $row;
+            }
         }
-    }
 
-    return $categoryNames;
-}
+        return $categoryData;
+    }
 
  // Get category by name
     public function getCategoryByName($name)
@@ -50,7 +51,6 @@
   public function createCategory($name, $description) {
     // Prepare the SQL statement
     $query = $this->DB->prepare("INSERT INTO `travel-blog`.categories (name, description) VALUES (?, ?)");
-
     // Bind the parameters
     $query->bind_param("ss", $name, $description);
 
@@ -66,5 +66,33 @@
   }
 
 
-  }
+  // ...
 
+// Get category by ID
+public function getCategoryByID($id)
+{
+    $id = $this->DB->real_escape_string($id);
+    $query = "SELECT * FROM `travel-blog`.categories WHERE id = '$id'";
+    $result = $this->DB->query($query);
+
+    if ($result->num_rows > 0) {
+        return $result->fetch_assoc();
+    } else {
+        return false;
+    }
+}
+
+// Delete category by ID
+public function deleteCategory($id)
+{
+    $id = $this->DB->real_escape_string($id);
+    $query = "DELETE FROM `travel-blog`.categories WHERE id = '$id'";
+    $result = $this->DB->query($query);
+
+    return $result;
+}
+
+
+
+
+  }
