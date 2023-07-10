@@ -158,12 +158,6 @@ $postData = [
                     <option value="triangle">Triangle</option>
                     <option value="polygon">Polygon</option>
                   </optgroup>
-                  <optgroup label="Colors">
-                    <option value="red">Red</option>
-                    <option value="green">Green</option>
-                    <option value="blue" selected>Blue</option>
-                    <option value="purple">Purple</option>
-                  </optgroup>
                 </select>
               </div>
               <div class="form-group w-100 mb-4">

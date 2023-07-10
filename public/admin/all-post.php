@@ -1,3 +1,14 @@
+<?php
+
+require __DIR__ . '../../../vendor/autoload.php';
+use App\model\ArticlesModel;
+
+$articleModel = new ArticlesModel();
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -56,24 +67,18 @@
               </tr>
             </thead>
             <tbody>
+              <!-- generate table row from $articleModel->AllArticles() method -->
+              <?php foreach ($articleModel->AllArticles() as $article) { ?>
               <tr>
                 <td class="col-1 "><input type="checkbox" class=" form-check-input "></td>
-                <td class="col-8 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</td>
+                <td class="col-8 "><?= $article['title'] ?></td>
                 <td class="col-3 ">
                   <button class=" btn btn-sm btn-outline-primary ">Edit</button>
                   <button class=" btn btn-sm btn-outline-success ">View</button>
                   <button class=" btn btn-sm btn-outline-danger">Delete</button>
                 </td>
               </tr>
-              <tr>
-                <td class="col-1 "><input type="checkbox" class=" form-check-input "></td>
-                <td class="col-8 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</td>
-                <td class="col-3 ">
-                  <button class=" btn btn-sm btn-outline-primary ">Edit</button>
-                  <button class=" btn btn-sm btn-outline-success ">View</button>
-                  <button class=" btn btn-sm btn-outline-danger">Delete</button>
-                </td>
-              </tr>
+            <?php  } ?>
             </tbody>
           </table>
         </div>

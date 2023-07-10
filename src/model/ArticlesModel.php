@@ -30,10 +30,15 @@ class ArticlesModel {
 
     // get all profile 
      public function AllArticles () {
-      $data = $this->DB->query("SELECT * FROM `articles`;");
-      if ($data->num_rows > 0) {
-        print_r($data->fetch_all());
+      // get all articles from articles table 
+      $query = $this->DB->query("SELECT * FROM `articles`");
+      $articles = [];
+      if ($query->num_rows > 0) {
+        while ($data = $query->fetch_assoc()) {
+          $articles[] = $data;
+        }
       }
+      return $articles;
     }
 
 

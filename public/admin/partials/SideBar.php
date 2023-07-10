@@ -49,9 +49,9 @@ $current_page = end($extract_current_link);
             <li class="submenu-item <?php if ($current_page == 'categories.php') echo 'active'; ?>">
               <a href="categories.php">Categories</a>
             </li>
-            <li class="submenu-item <?php if ($current_page == 'tags.php') echo 'active'; ?>">
+            <!-- <li class="submenu-item <?php if ($current_page == 'tags.php') echo 'active'; ?>">
               <a href="tags.php">Tags</a>
-            </li>
+            </li> -->
           </ul>
         </li>
         <li class="sidebar-item <?php if ($current_page == 'media.php') echo 'active'; ?>">
@@ -60,18 +60,18 @@ $current_page = end($extract_current_link);
             <span>Media</span>
           </a>
         </li>
-        <li class="sidebar-item <?php if ($current_page == 'comments.php') echo 'active'; ?>">
+        <!-- <li class="sidebar-item <?php if ($current_page == 'comments.php') echo 'active'; ?>">
           <a href="comments.php" class='sidebar-link'>
             <i class="bi bi-chat-dots-fill"></i>
             <span>Comments</span>
           </a>
-        </li>
-        <li class="sidebar-item <?php if ($current_page == 'users.php') echo 'active'; ?>">
+        </li> -->
+        <!-- <li class="sidebar-item <?php if ($current_page == 'users.php') echo 'active'; ?>">
           <a href="users.php" class='sidebar-link'>
             <i class="bi bi-people-fill"></i>
             <span>Users</span>
           </a>
-        </li>
+        </li> -->
         <li
           class="sidebar-item <?php if (($current_page == 'profile.php') || ($current_page == 'update-profile.php') ) echo 'active'; ?>">
           <a href="profile.php" class='sidebar-link'>
