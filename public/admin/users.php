@@ -1,6 +1,14 @@
 <?php
 
-  
+    require __DIR__ . '../../../vendor/autoload.php';
+
+    use App\model\ProfileModel;
+
+    $profiles = new ProfileModel(1);
+
+    $profiles->AllProfile();
+    
+
 
 
 ?>
@@ -49,30 +57,28 @@
               <table class=" table table-md w-100 border ">
                 <thead>
                   <tr>
-                    <th class=" col-1 ">
-                      <input type="checkbox" class=" form-check-input "> <span class=" ms-2 ">All</span>
+                    <th class=" col-2 ">
+                      <input type="checkbox" class=" form-check-input d-inline-block me-1 ">
+                       <span class="">All</span>
                     </th>
-                    <th class=" col-8 ">Comments</th>
+                    <th class=" col-7 ">Name</th>
                     <th class=" col-3 ">Actions</th>
                   </tr>
                 </thead>
                 <tbody>
+                  <?php 
+
+
+                  ?>
                   <tr>
-                    <td class="col-1 "><input type="checkbox" class=" form-check-input "></td>
-                    <td class="col-8 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</td>
+                    <td class="col-2 "><input type="checkbox" class=" form-check-input "></td>
+                    <td class="col-7 ">rejoan</td>
                     <td class="col-3 ">
-                      <button class=" btn btn-sm btn-outline-primary ">Edit</button>
+                      <button class=" btn btn-sm btn-outline-primary mb-2 mb-sm-0 ">Edit</button>
                       <button class=" btn btn-sm btn-outline-danger">Delete</button>
                     </td>
                   </tr>
-                  <tr>
-                    <td class="col-1 "><input type="checkbox" class=" form-check-input "></td>
-                    <td class="col-8 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</td>
-                    <td class="col-3 ">
-                      <button class=" btn btn-sm btn-outline-primary ">Edit</button>
-                      <button class=" btn btn-sm btn-outline-danger">Delete</button>
-                    </td>
-                  </tr>
+                  
                 </tbody>
               </table>
             </div>
@@ -81,7 +87,6 @@
       </div>
 
     </div>
-    <!-- Writting Settings End --
     </div>
   </div>
   <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>

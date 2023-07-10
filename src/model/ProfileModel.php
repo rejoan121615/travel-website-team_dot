@@ -29,6 +29,14 @@
       return $this->userData;
     }
 
+    // get all profile 
+     public function AllProfile () {
+      $data = $this->DB->query("SELECT * FROM `profiles`;");
+      if ($data->num_rows > 0) {
+        print_r($data->fetch_all());
+      }
+    }
+
     static function updateProfile (...$data) {
       print_r($data);
     }

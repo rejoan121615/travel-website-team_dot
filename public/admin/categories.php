@@ -1,3 +1,39 @@
+<?php
+
+  require __DIR__ . '../../../vendor/autoload.php';
+  use App\model\CategoryModel;
+
+  // echo $_GET['c-name'];
+
+if (isset($_GET['c-name'])) {
+    $title = $_GET['c-name'];
+    $description = $_GET['c-description'];
+    $msg = '';
+    // $categoryModel = new CategoryModel();
+    // $categoryModel->createCategory("New Category", "This is a new category description");
+    // Check if the category already exists
+    $categoryModel = new CategoryModel();
+    $existingCategory = $categoryModel->getCategoryByName($title);
+    if ($existingCategory) {
+     $msg = "<p class=' text-danger text-center'>Category already exists.</p>";
+    //  header('location:categories.php');
+    } else {
+      // Create the new category
+      $categoryModel->createCategory($title, $description);
+      $msg = "<p class=' text-success text-center'>
+  Category created successfully.
+</p>";
+      // header('location:categories.php');
+    }
+  }
+
+
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,16 +76,39 @@
             <div class="card-content">
               <div class="card-body">
                 <h4 class="card-title">Add New Categories</h4>
-
-                <div class="row">
-                  <div class="col-12"> <input type="text" class="form-control is-valid" id="valid-state"
-                      placeholder="Valid" value="Valid" required>
-                    <div class="valid-feedback">
-                      <i class="bx bx-radio-circle"></i>
+                  <form action="" method="get" class="needs-validation" novalidate>
+                    <div class="row">
+                      <?= isset($msg) ? $msg : null ?>
+                      <div class="col-12">
+                        <div class="form-group">
+                          <label for="c-name" class=" mb-2 ">Category Name</label>
+                          <input type="text" name="c-name" class="form-control" id="c-name" placeholder="Enter name" required>
+                          <div class="valid-feedback">
+                            Category Name is valid.
+                          </div>
+                          <div class="invalid-feedback">
+                            Please enter a Category Name.
+                          </div>
+                          <div id="category-suggestions"></div> <!-- Container to display category name suggestions -->
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-group">
+                          <label for="c-description" class=" mb-2 ">Categories Description</label>
+                          <input type="text" name="c-description" class="form-control" id="c-description" placeholder="Enter categories description" required>
+                          <div class="valid-feedback">
+                            Categories Description is valid.
+                          </div>
+                          <div class="invalid-feedback">
+                            Please enter Categories Description.
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class=" mt-3"><input class="btn btn-primary" type="submit" value="Submit"></div>
-                  </div>
-                </div>
+                    <div class="mt-3">
+                      <input class="btn btn-primary" type="submit" value="Submit">
+                    </div>
+                  </form>
               </div>
             </div>
           </div>
@@ -95,6 +154,21 @@
   </div>
   <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script>
+  // Get all forms that have the 'needs-validation' class
+  var forms = document.querySelectorAll('.needs-validation');
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms).forEach(function(form) {
+    form.addEventListener('submit', function(event) {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    }, false);
+  });
+</script>
   <script src="assets/js/main.js"></script>
 </body>
 
