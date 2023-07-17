@@ -238,7 +238,6 @@ form.addEventListener('submit', function(event) {
 });
 
 
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>
